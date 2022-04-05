@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Box nikimad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Musick box nikimad</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-identic">
+        <div class="logo"></div>
+        <span class="title">Music box</span>
+      </div>
+      <nav class="header-nav">
+        <a class="link" href="#">Главная</a>
+        <a class="link" href="#">Каталог</a>
+        <a class="link" href="#">Исполнители</a>
+        <a class="link" href="#">Контакты</a>
+      </nav>
+      <form  class="header-form">
+        <input type="search" class="search" placeholder="Поиск..." autofocus>
+      </form>
+    </header>
+    <main class="main">
+      <section class="main-description description" id="page-description">
+        <h1 class="description-head">Онлайн музыка где угодно</h1>
+        <h2 class="description-subhead">Без ограничений</h2>
+        <p class="description-caption">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир     музыки</p>
+        <form class="description-form">
+          <input type="text" class="name input" placeholder="Имя"></input>
+          <input type="text" class="email input" placeholder="Email"></input>
+          <input type="submit" class="submit" value="Получить доступ"></input>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
