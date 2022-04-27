@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('../fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@mixin text($size, $lh, $weight) {
+    font: $size/$lh 'Roboto', sans-serif;
+    font-weight: $weight;
+}
+
+%h1-d {
+  @include text(60px, 90px, 700);
+}
+
+%h2-d {
+    @include text(38px, 57px, 700);
+}
+
+%h3-d {
+    @include text(24px, 45px, 400);
+}
+
+%h4-d {
+    @include text(18px, 27px, 700)
+}
+
+%h1-m {
+    @include text(30px, 45px, 700);
+}
+  
+%h2-m {
+    @include text(18px, 27px, 700);
+}
+  
+%h3-m {
+    @include text(16px, 24px, 700);
+}
+  
+%h4-m {
+    @include text(18px, 24px, 700)
+}
+
+$mul: 4px;
+
+@for $i from 1 through 7 {
+    %f#{$i} {
+        @include text(4 * $mul, 6 * $mul , 400);
+    }
+    $mul: $mul + 2px;
+}
+
+%fsmall {
+    @include text(12.8px, 19.2px , 400);
+}
+
+%fsmall-bold {
+    @extend %fsmall;
+    font-weight: 700;
+    text-transform: uppercase;
+}
