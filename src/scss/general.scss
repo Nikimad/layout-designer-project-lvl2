@@ -1,0 +1,29 @@
+@import './typography.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    font: 16px/1.5  'Roboto', sans;
+    background-color: #08020d;
+    color: #fff;
+
+    margin: 0;
+}
+
+.main {
+    margin-top: -25px;
+}
+
+@media screen and (max-width: 886px) {
+    .main {
+        margin-top: -68px;
+    }
+}
+
+@media screen and (max-width: 491px) {
+    .main {
+        margin-top: -160px;
+    }
+}

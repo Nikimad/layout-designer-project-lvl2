@@ -1,45 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Musick box nikimad</title>
-  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  <title>Music box nikimad</title>
+  <link href="./css/style.css" rel="stylesheet" />
 </head>
 
-<body>
-  <div class="wrapper">
+<body class="body">
     <header class="header">
-      <div class="header-identic">
+      <div class="identic">
         <div class="logo"></div>
         <span class="title">Music box</span>
       </div>
-      <nav class="header-nav">
-        <a class="link" href="#">Главная</a>
-        <a class="link" href="#">Каталог</a>
-        <a class="link" href="#">Исполнители</a>
-        <a class="link" href="#">Контакты</a>
+      <nav class="nav">
+        <a class="item" href="#">Главная</a>
+        <a class="item" href="#">Каталог</a>
+        <a class="item" href="#">Исполнители</a>
+        <a class="item" href="#">Контакты</a>
       </nav>
-      <form  class="header-form">
-        <input type="search" class="search" placeholder="Поиск..." autofocus>
+      <form  class="search">
+        <input type="search" class="input" placeholder="Поиск..." autofocus>
       </form>
     </header>
+
     <main class="main">
-      <section class="main-description description" id="page-description">
-        <h1 class="description-head">Онлайн музыка где угодно</h1>
-        <h2 class="description-subhead">Без ограничений</h2>
-        <p class="description-caption">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир     музыки</p>
-        <form class="description-form">
-          <div class="form-inputs">
-            <input type="text" class="name input" placeholder="Имя"></input>
-            <input type="text" class="email input" placeholder="Email"></input>
-          </div>
-          <input type="submit" class="submit" value="Получить доступ"></input>
+      <section class="page-description" id="page-description">
+        <h1 class="head">Онлайн музыка где угодно</h1>
+        <h2 class="subhead">Без ограничений</h2>
+        <p class="caption">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+        <form class="subscribe-form">
+            <input type="text" class="input" placeholder="Имя"></input>
+            <input type="text" class="input" placeholder="Email"></input>
+            <input type="submit" class="btn" value="Получить доступ"></input>
         </form>
       </section>
     </main>
-  </div>
   <script src="script.js"></script>
 </body>
 </html>

@@ -9,58 +9,73 @@
     src: url('../fonts/Roboto/Roboto-Bold.ttf');
 }
 
-@mixin text($size, $lh, $weight) {
-    font: $size/$lh 'Roboto', sans-serif;
-    font-weight: $weight;
+@mixin text($size, $lh) {
+    font-size: $size;
+    line-height: $lh;
+}
+
+%f-w-bold {
+    font-weight: 700;
+}
+%f-w-regular {
+    font-weight: 400;
 }
 
 %h1-d {
-  @include text(60px, 90px, 700);
+  @include text(60px, 90px);
+  @extend %f-w-bold;
 }
 
 %h2-d {
-    @include text(38px, 57px, 700);
+    @include text(38px, 57px);
+    @extend %f-w-bold;
 }
 
 %h3-d {
-    @include text(24px, 45px, 400);
+    @include text(24px, 45px);
+    @extend %f-w-regular;
 }
 
 %h4-d {
-    @include text(18px, 27px, 700)
+    @include text(18px, 27px);
+    @extend %f-w-bold;
 }
 
-%h1-m {
-    @include text(30px, 45px, 700);
+@mixin h1-m {
+    @include text(30px, 45px);
+    @extend %f-w-bold;
 }
   
-%h2-m {
-    @include text(18px, 27px, 700);
+@mixin h2-m {
+    @include text(18px, 27px);
+    @extend %f-w-bold;
 }
   
-%h3-m {
-    @include text(16px, 24px, 700);
+@mixin h3-m {
+    @include text(16px, 24px);
+    @extend %f-w-bold;
 }
   
-%h4-m {
-    @include text(18px, 24px, 700)
+@mixin h4-m {
+    @include text(18px, 24px);
+    @extend %f-w-bold;
 }
 
 $mul: 4px;
 
 @for $i from 1 through 7 {
     %f#{$i} {
-        @include text(4 * $mul, 6 * $mul , 400);
+        @include text(4 * $mul, 6 * $mul);
     }
     $mul: $mul + 2px;
 }
 
 %fsmall {
-    @include text(12.8px, 19.2px , 400);
+    @include text(12.8px, 19.2px);
 }
 
 %fsmall-bold {
     @extend %fsmall;
-    font-weight: 700;
+    @extend %f-w-bold;
     text-transform: uppercase;
 }
