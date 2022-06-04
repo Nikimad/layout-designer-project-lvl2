@@ -120,3 +120,16 @@
         }
     }
 }
+
+@media screen and (max-width: 400px) { 
+    .news-section {
+        .section__body {
+            .news-item {
+                &__img {
+                    width: 320px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

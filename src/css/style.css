@@ -478,6 +478,12 @@
     font-weight: 400;
   }
 }
+@media screen and (max-width: 400px) {
+  .news-section .section__body .news-item__img {
+    width: 320px;
+    height: auto;
+  }
+}
 .app-section {
   padding-bottom: 100px;
 }
