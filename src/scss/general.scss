@@ -39,7 +39,6 @@
     border: none;
     border-radius: 5px;
     color: #fff;
-    background-color: $green;
 
     cursor: pointer;
 
@@ -49,6 +48,14 @@
 
     &:hover {
         transform: scale(1.05);
+    }
+
+    &_round {
+        border-radius: 2em;
+    }
+
+    &_red {
+        background-color: $red
     }
 
     &_green {

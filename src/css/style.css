@@ -98,13 +98,18 @@
   border: none;
   border-radius: 5px;
   color: #fff;
-  background-color: #34C176;
   cursor: pointer;
   transition: 0.3s;
   padding: 20px 30px;
 }
 .btn:hover {
   transform: scale(1.05);
+}
+.btn_round {
+  border-radius: 2em;
+}
+.btn_red {
+  background-color: #95390C;
 }
 .btn_green {
   background-color: #34C176;
@@ -471,6 +476,36 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
+  }
+}
+.app-section .section__body {
+  display: flex;
+  gap: 144px;
+}
+.app-section .section__body .content {
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+}
+.app-section .section__body .content .btn {
+  font-size: 12.8px;
+  line-height: 19.2px;
+  width: fit-content;
+  padding: 16px 40px;
+}
+
+@media screen and (max-width: 910px) {
+  .app-section .section__body {
+    flex-direction: column;
+    gap: 0;
+  }
+  .app-section .section__body .content {
+    order: 1;
+  }
+  .app-section .section__body .img {
+    align-self: center;
+    width: 333px;
+    height: auto;
+    order: 0;
   }
 }
 
