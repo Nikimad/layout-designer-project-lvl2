@@ -1,4 +1,6 @@
 .app-section {
+    padding-bottom: 100px;
+
     .section__body {
         display: flex;
         gap: 144px;
@@ -11,6 +13,10 @@
 
                 padding: 16px 40px;
             }
+        }
+        .img {
+            width: 333px;
+            height: auto;
         }
     }
 }
@@ -25,9 +31,6 @@
             }
             .img {
                 align-self: center;
-
-                width: 333px;
-                height: auto;
 
                 order: 0;
             }
