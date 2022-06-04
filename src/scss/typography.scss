@@ -14,51 +14,51 @@
     line-height: $lh;
 }
 
-%f-w-bold {
+@mixin f-w-bold {
     font-weight: 700;
 }
-%f-w-regular {
+@mixin f-w-regular {
     font-weight: 400;
 }
 
 %h1-d {
   @include text(60px, 90px);
-  @extend %f-w-bold;
+  @include f-w-bold;
 }
 
 %h2-d {
     @include text(38px, 57px);
-    @extend %f-w-bold;
+    @include f-w-bold;
 }
 
 %h3-d {
     @include text(24px, 45px);
-    @extend %f-w-regular;
+    @include f-w-regular;
 }
 
 %h4-d {
     @include text(18px, 27px);
-    @extend %f-w-bold;
+    @include f-w-bold;
 }
 
 @mixin h1-m {
     @include text(30px, 45px);
-    @extend %f-w-bold;
+    @include f-w-bold;
 }
   
 @mixin h2-m {
     @include text(18px, 27px);
-    @extend %f-w-bold;
+    @include f-w-bold;
 }
   
 @mixin h3-m {
     @include text(16px, 24px);
-    @extend %f-w-bold;
+    @include f-w-bold;
 }
   
 @mixin h4-m {
     @include text(18px, 24px);
-    @extend %f-w-bold;
+    @include f-w-bold;
 }
 
 $mul: 4px;
@@ -76,6 +76,6 @@ $mul: 4px;
 
 %fsmall-bold {
     @extend %fsmall;
-    @extend %f-w-bold;
+    @include f-w-bold;
     text-transform: uppercase;
 }

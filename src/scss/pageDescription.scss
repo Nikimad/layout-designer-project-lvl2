@@ -44,7 +44,7 @@
 
         .input {
             @include text(14px, 16.41px);
-            @extend %f-w-bold;
+            @include f-w-bold;
 
             color: #fff;
 
@@ -68,24 +68,6 @@
         .btn {
             grid-row-start: 2;
             grid-column: 1 / span 2;
-            @include text(13.3px, 15px);
-            font-family: Arial, Helvetica, sans-serif;
-            text-transform: uppercase;
-
-            border: none;
-            border-radius: 5px;
-            color: #fff;
-            background-color: $green;
-
-            cursor: pointer;
-
-            transition: 0.3s;
-
-            padding: 21px;
-
-            &:hover {
-                transform: scale(1.05);
-            }
         }
     }
 }

@@ -1,0 +1,26 @@
+.section {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    gap: 3em;
+
+    padding: 100px 20px 0;
+
+    &__title {
+        @extend %h2-d;
+        text-align: center;
+        text-transform: uppercase;
+
+        margin: 0;
+    }
+    &__body {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 571px) {
+    .section {
+        &__title {
+            @include h2-m;
+        }
+    }
+}
