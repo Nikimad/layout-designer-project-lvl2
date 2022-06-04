@@ -57,11 +57,24 @@
 
     &_tp {
         background-color: transparent;
+    }
 
+    &_b-white {
         border: 1px solid #fff;
+    }
+    &_b-dark-grey {
+        border: 1px solid $d-gray;
     }
 
     &_f-small {
         @include text(13.3px, 15px);
     }
+}
+
+.f-dark-grey {
+    color: $d-gray;
+}
+
+.f-orange {
+    color: $orange;
 }
