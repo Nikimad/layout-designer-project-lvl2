@@ -105,3 +105,13 @@
         }
     }    
 }
+
+@media screen and (max-width: 400px) { 
+    .pricing-section {
+        .section__body {
+            .pricing-item {
+                flex-basis: 320px;
+            }
+        }
+    } 
+}

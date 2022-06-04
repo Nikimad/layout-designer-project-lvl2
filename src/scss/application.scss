@@ -37,3 +37,14 @@
         }
     }
 }
+
+@media screen and (max-width: 400px) {
+    .app-section {
+        .section__body {
+            .img {
+                width: 300px;
+                height: auto;
+            }
+        }
+    }
+}
