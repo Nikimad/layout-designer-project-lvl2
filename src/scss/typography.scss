@@ -9,73 +9,90 @@
     src: url('../fonts/Roboto/Roboto-Bold.ttf');
 }
 
-@mixin text($size, $lh) {
+@mixin text($size, $lh, $fw) {
     font-size: $size;
     line-height: $lh;
+    font-weight: $fw;
 }
 
-@mixin f-w-bold {
-    font-weight: 700;
-}
-@mixin f-w-regular {
-    font-weight: 400;
+@mixin upCase {
+    text-transform: uppercase;    
 }
 
-%h1-d {
-  @include text(60px, 90px);
-  @include f-w-bold;
+@mixin marg0 {
+    margin: 0;
 }
 
-%h2-d {
-    @include text(38px, 57px);
-    @include f-w-bold;
+@mixin tAlgCentr {
+    text-align: center;
 }
 
-%h3-d {
-    @include text(24px, 45px);
-    @include f-w-regular;
+.head {
+    @include tAlgCentr;
+    @include upCase;
+
+    @include marg0;
 }
 
-%h4-d {
-    @include text(18px, 27px);
-    @include f-w-bold;
+.f-white {
+    color: $white;
+}
+.f-dark-grey {
+    color: $d-gray;
+}
+.f-orange {
+    color: $orange;
 }
 
-@mixin h1-m {
-    @include text(30px, 45px);
-    @include f-w-bold;
+/* Desktop typography */
+.h1 {
+  @include text(60px, 90px, 700);
 }
-  
-@mixin h2-m {
-    @include text(18px, 27px);
-    @include f-w-bold;
+
+.h2 {
+  @include text(38px, 57px, 700);
 }
-  
-@mixin h3-m {
-    @include text(16px, 24px);
-    @include f-w-bold;
+
+.h3 {
+  @include text(24px, 45px, 400);
 }
-  
-@mixin h4-m {
-    @include text(18px, 24px);
-    @include f-w-bold;
+
+.h4 {
+  @include text(18px, 27px, 700);
+}
+/* Mobile typography */
+@media screen and (max-width: 571px) {
+    .h1 {
+        @include text(30px, 45px, 700);
+    }
+
+    .h2 {
+        @include text(18px, 27px, 700);
+    }
+
+    .h3 {
+        @include text(16px, 24px, 700);
+    }
+
+    .h4 {
+        @include text(18px, 24px, 700);
+    }
 }
 
 $mul: 4px;
 
 @for $i from 1 through 7 {
     %f#{$i} {
-        @include text(4 * $mul, 6 * $mul);
+        @include text(4 * $mul, 6 * $mul, 400);
     }
     $mul: $mul + 2px;
 }
 
 %fsmall {
-    @include text(12.8px, 19.2px);
+    @include text(12.8px, 19.2px, 400);
 }
 
 %fsmall-bold {
-    @extend %fsmall;
-    @include f-w-bold;
-    text-transform: uppercase;
+    @include text(12.8px, 19.2px, 700);
+    @include upCase;
 }
