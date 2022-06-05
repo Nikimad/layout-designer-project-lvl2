@@ -5,8 +5,8 @@
 
     max-width: 1200px;
 
-    @include text(11px, 16.5px);
-    text-transform: uppercase;
+    @include text(11px, 16.5px, 400);
+    @include upCase;
 
     transform: translateY(25px);
 
@@ -44,10 +44,10 @@
         margin-left: auto;
 
         .input {
-            @include text(13.3px, 15.29px);
+            @include text(13.3px, 15.29px, 400);
             font-family: Arial, Helvetica, sans-serif;
             color: #757575;
-            text-transform: uppercase;
+            @include upCase;
 
             min-width: 248px;
             height: 25px;

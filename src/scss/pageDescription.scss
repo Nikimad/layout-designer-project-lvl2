@@ -9,20 +9,7 @@
     background-size: cover;
 
     padding: 200px 0;
-    .head {
-        @extend %h1-d;
-        text-transform: uppercase;
-        text-align: center;
 
-        margin: 0;
-    }
-    .subhead {
-        @extend %h2-d;
-        text-transform: uppercase;
-        text-align: center;
-
-        margin: 0;
-    }
     .caption {
         @extend %f1;
         grid-row-start: 4;
@@ -43,10 +30,9 @@
         justify-self: center;
 
         .input {
-            @include text(14px, 16.41px);
-            @include f-w-bold;
+            @include text(14px, 16.41px, 700);
 
-            color: #fff;
+            color: $white;
 
             border: 2px solid $d-gray;
             border-radius: 3px;
@@ -59,15 +45,16 @@
             padding: 16px 22.24px 18px;
 
             &::placeholder {
-                @include text(14px, 16px);
-                font-weight: 700;
-                color: #fff;
+                @include text(14px, 16px, 700);
+                color: $white;
             }
         }
 
         .btn {
             grid-row-start: 2;
             grid-column: 1 / span 2;
+
+            @include text(13.3px, 15px, 400);
         }
     }
 }
@@ -84,12 +71,6 @@
         grid-template-rows: min-content min-content 1em min-content 1em min-content;
 
         padding-top: 260px;
-        .head {
-            @include h1-m;
-        }
-        .subhead {
-            @include h2-m;
-        }
 
         .subscribe-form {
             grid-template-columns: 1fr;

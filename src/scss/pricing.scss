@@ -32,10 +32,6 @@
             padding-bottom: 4em;
 
             &__title {
-                @extend %h3-d;
-                text-transform: uppercase;
-
-                margin: 0;
             }
             &__value {
                 grid-row: 3 / span 1;
@@ -46,8 +42,8 @@
                 grid-template-columns: min-content min-content;
                 gap: 1rem;
 
-                @include text(4em, 1em);
-                text-transform: uppercase;
+                @include text(4em, 1em, 400);
+                @include upCase;
 
                 margin: 0;
 
@@ -89,18 +85,6 @@
         .section__body {
             .pricing-item {
                 flex-basis: 374px;
-            }
-        }
-    }    
-}
-
-@media screen and (max-width: 571px) {
-    .pricing-section {
-        .section__body {
-            .pricing-item {
-                &__title {
-                    @include h3-m;
-                }
             }
         }
     }    

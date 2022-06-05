@@ -21,9 +21,8 @@
                 margin-bottom: 24px;
 
                 .news-title {
-                    @extend %h3-d;
-
-                    margin: 0;
+                    text-align: left;
+                    text-transform: none;
                 }
                 .news-text {
                     margin: 0;
@@ -40,8 +39,8 @@
                     display: flex;
                     gap: 16px;
 
-                    @include text(12px, 19px);
-                    text-transform: uppercase;
+                    @include text(12px, 19px, 400);
+                    @include upCase;
 
                     &__avatar {
                         width: 19px;
@@ -62,9 +61,6 @@
                     }
                 }
                 .btn {
-                    width: fit-content;
-
-                    padding: 16px 30px;
                     margin-bottom: 1em;
                 }
             }
@@ -112,8 +108,7 @@
             .news-item {
                 &__body {
                     .news-title {
-                        @include text(16px, 24px);
-                        @include f-w-regular;
+                        @include text(16px, 24px, 400);
                     }
                 }
             }

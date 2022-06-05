@@ -30,10 +30,7 @@
             gap: 1em;
 
             .list-name {
-                @include text(18px, 27px);
-                text-transform: uppercase;
-
-                margin: 0;
+                text-align: left;
             }
             .list {
                 &.socials {

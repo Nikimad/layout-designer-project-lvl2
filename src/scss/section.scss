@@ -6,7 +6,6 @@
     padding: 100px 20px 0;
 
     &__title {
-        @extend %h2-d;
         text-align: center;
         text-transform: uppercase;
 
@@ -15,14 +14,6 @@
     &__body {
         max-width: 1200px;
         margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 571px) {
-    .section {
-        &__title {
-            @include h2-m;
-        }
     }
 }
 

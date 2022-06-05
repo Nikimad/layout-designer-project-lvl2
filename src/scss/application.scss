@@ -8,10 +8,7 @@
             display: grid;
             grid-template-rows: min-content min-content min-content;
             .btn {
-                @include text(12.8px, 19.2px);
-                width: fit-content;
-
-                padding: 16px 40px;
+                @include text(12.8px, 19.2px, 400);
             }
         }
         .img {
