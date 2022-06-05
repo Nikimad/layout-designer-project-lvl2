@@ -1,0 +1,15 @@
+.main {
+    margin-top: -25px;
+}
+
+@media screen and (max-width: 886px) {
+    .main {
+        margin-top: -68px;
+    }
+}
+
+@media screen and (max-width: 491px) {
+    .main {
+        margin-top: -160px;
+    }
+}

@@ -1,6 +1,9 @@
 @import './typography.scss';
 @import './btn.scss';
 @import './section.scss';
+@import './header.scss';
+@import './main.scss';
+@import './footer.scss';
 
 * {
     box-sizing: border-box;
@@ -13,20 +16,4 @@
     background-color: #08020d;
 
     margin: 0;
-}
-
-.main {
-    margin-top: -25px;
-}
-
-@media screen and (max-width: 886px) {
-    .main {
-        margin-top: -68px;
-    }
-}
-
-@media screen and (max-width: 491px) {
-    .main {
-        margin-top: -160px;
-    }
 }

@@ -1,24 +1,27 @@
 .section {
     display: grid;
-    grid-template-rows: min-content min-content;
+    grid-auto-flow: row;
     gap: 3em;
 
-    padding: 100px 20px 0;
+    padding-top: 100px;
 
-    &__title {
-        text-align: center;
-        text-transform: uppercase;
-
-        margin: 0;
-    }
     &__body {
+        justify-self: center;
+
         max-width: 1200px;
-        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1239px) {
+    .section {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
 @media screen and (max-width: 400px) {
     .section {
-        padding: 100px 10px 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
