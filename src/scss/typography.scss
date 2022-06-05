@@ -28,6 +28,7 @@
 }
 
 .head {
+    color: $white;
     @include tAlgCentr;
     @include upCase;
 
@@ -37,7 +38,7 @@
 .f-white {
     color: $white;
 }
-.f-dark-grey {
+.f-dark-gray {
     color: $d-gray;
 }
 .f-orange {

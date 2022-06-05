@@ -47,6 +47,11 @@
                             background-repeat: no-repeat;
                             background-position: center;
                             background-position: center;
+
+                            transition: 0.3s;
+                        }
+                        &:hover .link {
+                            filter: sepia(100%) hue-rotate(230deg) brightness(100%) contrast(100%);
                         }
                     }
                     & :nth-child(1) .link {
@@ -103,10 +108,12 @@
             font: inherit;
             color: $gray;
             text-decoration: none;
+
+            transition: 0.3s;
         }
 
-        &:hover {
-            color: #fff;
+        &:hover .link {
+            color: $white;
         }
     }
 }

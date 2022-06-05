@@ -9,6 +9,7 @@
   src: url("../fonts/Roboto/Roboto-Bold.ttf");
 }
 .head {
+  color: #fff;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
@@ -18,7 +19,7 @@
   color: #fff;
 }
 
-.f-dark-grey {
+.f-dark-gray {
   color: #CACACA;
 }
 
@@ -99,7 +100,6 @@
   font-size: inherit;
   line-height: inherit;
   font-family: Arial, Helvetica, sans-serif;
-  color: #CACACA;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
@@ -377,6 +377,7 @@
   display: grid;
   grid-template-rows: min-content 12.5em min-content 2.5em min-content 4em;
   border-radius: 1em;
+  color: #fff;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -601,6 +602,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-position: center;
+  transition: 0.3s;
+}
+.footer__top .list-container .list.socials .list-item:hover .link {
+  filter: sepia(100%) hue-rotate(230deg) brightness(100%) contrast(100%);
 }
 .footer__top .list-container .list.socials :nth-child(1) .link {
   background-image: url("../images/Google+.png");
@@ -639,8 +644,9 @@
   font: inherit;
   color: #E0E0E0;
   text-decoration: none;
+  transition: 0.3s;
 }
-.list-item:hover {
+.list-item:hover .link {
   color: #fff;
 }
 

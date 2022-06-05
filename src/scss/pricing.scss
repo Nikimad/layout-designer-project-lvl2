@@ -20,7 +20,10 @@
             
             display: grid;
             grid-template-rows: min-content 12.5em min-content 2.5em min-content 4em;
+            
             border-radius: 1em;
+
+            color: $white;
             text-align: center;
 
             background-repeat: no-repeat;
