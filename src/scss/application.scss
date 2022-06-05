@@ -7,6 +7,11 @@
         .content {
             display: grid;
             grid-template-rows: min-content min-content min-content;
+
+            & :nth-child(1) {
+                margin-bottom: 0
+            }
+
             .btn {
                 @include text(12.8px, 19.2px, 400);
             }

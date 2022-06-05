@@ -533,6 +533,9 @@
   display: grid;
   grid-template-rows: min-content min-content min-content;
 }
+.app-section .section__body .content :nth-child(1) {
+  margin-bottom: 0;
+}
 .app-section .section__body .content .btn {
   font-size: 12.8px;
   line-height: 19.2px;
