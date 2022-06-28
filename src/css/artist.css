@@ -392,13 +392,16 @@
   grid-template-rows: min-content min-content 2em min-content;
   justify-content: start;
   width: 100%;
-  margin: 0 auto;
+  margin-inline: auto;
+}
+.page-description .section__body .head {
+  text-align: left;
 }
 .page-description .section__body .btns-container {
   grid-row: 4/span 1;
   display: flex;
   gap: 24px;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 .page-description .section__body .btns-container .btn {
   display: flex;
@@ -418,6 +421,12 @@
 }
 .page-description .section__body .btns-container :nth-child(2) .icon {
   background-image: url("../images/heart.svg");
+}
+
+@media screen and (max-width: 571px) {
+  .page-description .section__body .btns-container {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=artist.css.map */

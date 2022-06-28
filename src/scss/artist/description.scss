@@ -14,7 +14,11 @@
         justify-content: start;
         width: 100%;
 
-        margin: 0 auto;
+        margin-inline: auto;
+
+        .head {
+            text-align: left;
+        }
 
         .btns-container {
             grid-row: 4 / span 1;
@@ -22,7 +26,7 @@
             display: flex;
             gap: 24px;
 
-            margin-bottom: 23px;
+            margin-bottom: 24px;
 
             .btn {
                 display: flex;
@@ -49,6 +53,16 @@
             }
             & :nth-child(2) .icon {
                 background-image: url('../images/heart.svg');
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 571px) {
+    .page-description {
+        .section__body {    
+            .btns-container {
+                flex-direction: column;
             }
         }
     }
