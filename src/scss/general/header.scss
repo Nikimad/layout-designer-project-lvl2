@@ -71,7 +71,7 @@
 
 @media screen and (max-width: 1239px) {
     .header {
-        padding: 0 20px;
+        padding-inline:20px;
     }
 }
 
@@ -125,6 +125,6 @@
 
 @media screen and (max-width: 400px) {
     .header {
-        padding: 0 10px;
+        padding-inline: 10px;
     }
 }

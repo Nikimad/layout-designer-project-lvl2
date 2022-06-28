@@ -10,7 +10,7 @@
     background-position: center;
     background-size: cover;
 
-    padding: 200px 0;
+    padding-block: 200px;
 
     .caption {
         grid-row-start: 4;
@@ -62,8 +62,7 @@
 
 @media screen and (max-width: 1251px) {
     .page-description {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-inline: 20px;
     }    
 }
 
