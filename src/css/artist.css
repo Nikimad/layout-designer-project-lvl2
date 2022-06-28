@@ -379,6 +379,10 @@
   margin: 0;
 }
 
+.head {
+  text-align: left;
+}
+
 .page-description {
   color: #fff;
   background-image: url("../images/Morten Harket.png");
@@ -393,9 +397,6 @@
   justify-content: start;
   width: 100%;
   margin-inline: auto;
-}
-.page-description .section__body .head {
-  text-align: left;
 }
 .page-description .section__body .btns-container {
   grid-row: 4/span 1;
