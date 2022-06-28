@@ -80,15 +80,6 @@
     }
 }
 
-$mul: 4px;
-
-@for $i from 1 through 7 {
-    %f#{$i} {
-        @include text(4 * $mul, 6 * $mul, 400);
-    }
-    $mul: $mul + 2px;
-}
-
 %fsmall {
     @include text(12.8px, 19.2px, 400);
 }

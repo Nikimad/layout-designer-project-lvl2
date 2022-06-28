@@ -53,7 +53,7 @@
                 .currency {
                     grid-column: 2 / span 1;
 
-                    @extend %f3;
+                    @include text(32px, 48px, 400);
                 }
             }
 

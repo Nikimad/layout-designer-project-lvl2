@@ -78,6 +78,12 @@
     font-weight: 700;
   }
 }
+.page-description .section__body .btns-container .btn {
+  font-size: 12.8px;
+  line-height: 19.2px;
+  font-weight: 400;
+}
+
 .btn {
   font-size: inherit;
   line-height: inherit;
@@ -378,6 +384,47 @@
   color: #CACACA;
   background-color: #08020d;
   margin: 0;
+}
+
+.page-description {
+  color: #fff;
+  background-image: url("../images/Morten Harket.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0;
+}
+.page-description .section__body {
+  display: grid;
+  grid-template-rows: min-content min-content 2em min-content;
+  justify-content: start;
+  width: 100%;
+  margin: 0 auto;
+}
+.page-description .section__body .btns-container {
+  grid-row: 4/span 1;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 23px;
+}
+.page-description .section__body .btns-container .btn {
+  display: flex;
+  gap: 16px;
+  width: 200px;
+}
+.page-description .section__body .btns-container .btn .icon {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  filter: invert(100%);
+}
+.page-description .section__body .btns-container :nth-child(1) .icon {
+  background-image: url("../images/play-button.svg");
+}
+.page-description .section__body .btns-container :nth-child(2) .icon {
+  background-image: url("../images/heart.svg");
 }
 
 /*# sourceMappingURL=artist.css.map */

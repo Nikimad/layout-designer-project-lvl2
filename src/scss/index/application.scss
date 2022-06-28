@@ -13,7 +13,7 @@
             }
 
             .btn {
-                @include text(12.8px, 19.2px, 400);
+                @extend %fsmall;
             }
         }
         .img {

@@ -1,0 +1,55 @@
+.page-description {
+    color: $white;
+
+    background-image: url('../images/Morten\ Harket.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding: 200px 0;
+
+    .section__body {
+        display: grid;
+        grid-template-rows: min-content min-content 2em min-content;
+        justify-content: start;
+        width: 100%;
+
+        margin: 0 auto;
+
+        .btns-container {
+            grid-row: 4 / span 1;
+
+            display: flex;
+            gap: 24px;
+
+            margin-bottom: 23px;
+
+            .btn {
+                display: flex;
+                gap: 16px;
+
+                @extend %fsmall;
+
+                width: 200px;
+
+                & .icon {
+                   width: 20px;
+                   height: 20px;
+                   
+                   background-repeat: no-repeat;
+                   background-size: contain;
+                   background-position: center;
+
+                   filter: invert(100%);
+                }
+            }
+
+            & :nth-child(1) .icon {
+                background-image: url('../images/play-button.svg');
+            }
+            & :nth-child(2) .icon {
+                background-image: url('../images/heart.svg');
+            }
+        }
+    }
+}
