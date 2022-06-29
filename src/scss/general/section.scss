@@ -5,10 +5,13 @@
 
     padding-top: 100px;
 
+    &__title,
     &__body {
         justify-self: center;
 
         max-width: 1200px;
+
+        width: 100%;
     }
 }
 

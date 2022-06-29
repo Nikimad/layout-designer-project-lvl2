@@ -1,0 +1,52 @@
+.popular {
+    .section__body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        column-gap: 50px;
+
+        flex-wrap: wrap;
+
+        max-height: 250px;
+        .track {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            &-img {
+                width: 55px;
+                height: 55px;
+            }
+            &-info {
+                display: flex;
+                justify-content: space-between;
+
+                width: 100%;
+                .description {
+                    align-self: center;
+                    .title {
+                        @extend %fsmall-bold;
+                        color: $white;
+                        
+                        margin: 0;
+                    }
+                    .artist {
+                        @extend %fsmall;
+
+                        margin: 0;
+                    }
+                }
+                .duration {
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .popular {
+        .section__body {
+            max-height: 500px;
+        }
+    }
+    
+}

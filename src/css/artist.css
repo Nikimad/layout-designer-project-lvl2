@@ -75,10 +75,17 @@
     font-weight: 700;
   }
 }
-.page-description .section__body .btns-container .btn {
+.popular .section__body .track-info .description .artist, .page-description .section__body .btns-container .btn {
   font-size: 12.8px;
   line-height: 19.2px;
   font-weight: 400;
+}
+
+.popular .section__body .track-info .description .title {
+  font-size: 12.8px;
+  line-height: 19.2px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -137,9 +144,10 @@
   gap: 3em;
   padding-top: 100px;
 }
-.section__body {
+.section__title, .section__body {
   justify-self: center;
   max-width: 1200px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1239px) {
@@ -427,6 +435,116 @@
 @media screen and (max-width: 571px) {
   .page-description .section__body .btns-container {
     flex-direction: column;
+  }
+}
+.popular .section__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  column-gap: 50px;
+  flex-wrap: wrap;
+  max-height: 250px;
+}
+.popular .section__body .track {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.popular .section__body .track-img {
+  width: 55px;
+  height: 55px;
+}
+.popular .section__body .track-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.popular .section__body .track-info .description {
+  align-self: center;
+}
+.popular .section__body .track-info .description .title {
+  color: #fff;
+  margin: 0;
+}
+.popular .section__body .track-info .description .artist {
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .popular .section__body {
+    max-height: 500px;
+  }
+}
+.discography .section__body {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 25px;
+}
+.discography .section__body .album {
+  display: grid;
+  gap: 18px;
+}
+.discography .section__body .album-img {
+  width: 250px;
+  height: 250px;
+}
+.discography .section__body .album-info .title,
+.discography .section__body .album-info .year {
+  margin: 0;
+}
+.discography .section__body .album-info .title {
+  text-transform: none;
+}
+
+@media screen and (max-width: 600px) {
+  .discography .section__body .album-img {
+    width: 137px;
+    height: 137px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .discography .section__body {
+    justify-content: center;
+  }
+}
+.similar .section__body {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 25px;
+  padding-bottom: 100px;
+}
+.similar .section__body .artist {
+  display: grid;
+  gap: 18px;
+  max-width: 250px;
+}
+.similar .section__body .artist-img {
+  justify-self: center;
+  width: 250px;
+  height: 250px;
+}
+.similar .section__body .artist-info .name,
+.similar .section__body .artist-info .subscribers {
+  text-align: center;
+  margin: 0;
+}
+.similar .section__body .artist-info .name {
+  text-transform: none;
+}
+
+@media screen and (max-width: 600px) {
+  .similar .section__body .artist {
+    max-width: 137px;
+  }
+  .similar .section__body .artist-img {
+    width: 137px;
+    height: 137px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .similar .section__body {
+    justify-content: center;
   }
 }
 

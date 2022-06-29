@@ -137,9 +137,10 @@
   gap: 3em;
   padding-top: 100px;
 }
-.section__body {
+.section__title, .section__body {
   justify-self: center;
   max-width: 1200px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1239px) {
