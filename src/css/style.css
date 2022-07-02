@@ -257,7 +257,7 @@
   }
 }
 .wrapper {
-  padding-block: 200px;
+  padding: 200px 0;
 }
 
 .footer {
