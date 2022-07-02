@@ -68,9 +68,13 @@
     .page-description {
         grid-template-rows: min-content min-content 1em min-content 1em min-content;
 
+        .head {
+            margin-top: 50px;
+        }
+
         .subscribe-form {
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, 50px);
+            grid-template-rows: repeat(3, min-content);
 
             & :nth-child(2) {
                 grid-row: 2 / span 1;
@@ -81,11 +85,5 @@
                 grid-column: 1 / span 1;
             }
         }
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .page-description {
-        padding-top: 250px;
     }
 }
