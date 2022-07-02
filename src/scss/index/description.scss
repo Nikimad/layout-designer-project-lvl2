@@ -1,11 +1,15 @@
+.wrapper {
+    .content {
+        padding-block: 200px;
+    }
+}
+
 .page-description {
     display: grid;
     grid-template-rows: min-content min-content 2em min-content 1em min-content;
     justify-content: center;
 
     color: $white;
-
-    padding-block: 200px;
 
     .caption {
         grid-row-start: 4;
