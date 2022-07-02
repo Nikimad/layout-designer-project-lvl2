@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import './typography.scss';
+@import './container.scss';
 @import './btn.scss';
 @import './section.scss';
 @import './header.scss';
@@ -48,6 +49,13 @@
     }
 
 
+}
+
+.bg-img {
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .bg-gradient {

@@ -5,11 +5,6 @@
 
     color: $white;
 
-    background-image: url('../images/banner.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
     padding-block: 200px;
 
     .caption {
@@ -60,17 +55,11 @@
     }
 }
 
-@media screen and (max-width: 1251px) {
-    .page-description {
-        padding-inline: 20px;
-    }    
-}
-
-@media screen and (max-width: 571px) {
+@media screen and (max-width: 500px) {
     .page-description {
         grid-template-rows: min-content min-content 1em min-content 1em min-content;
 
-        padding-top: 260px;
+        padding-top: 250px;
 
         .subscribe-form {
             grid-template-columns: 1fr;
