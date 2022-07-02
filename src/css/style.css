@@ -250,7 +250,7 @@
   .header .nav {
     grid-row: 2/span 1;
     flex-direction: column;
-    gap: 3px;
+    gap: 0px;
     font-weight: 700;
     margin-left: 0;
   }
