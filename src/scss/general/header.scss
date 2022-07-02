@@ -111,10 +111,8 @@
         }
 
         .nav {
+            display: block;
             grid-row: 2 / span 1;
-
-            flex-direction: column;
-            gap: 3px;
 
             font-weight: 700;
                 
