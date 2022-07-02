@@ -265,7 +265,7 @@
   }
 }
 .footer {
-  padding-block: 4em 3em;
+  padding: 4em 3em;
 }
 .footer > * {
   max-width: 1200px;
@@ -275,7 +275,7 @@
 .footer__body {
   display: flex;
   gap: 40px;
-  padding-bottom: 4.5em;
+  margin-bottom: 7em;
 }
 .footer__body .list {
   flex: 1 1 270px;
@@ -291,9 +291,6 @@
 }
 .footer__body .socials .list-item:hover > * {
   filter: sepia(100%) brightness(200%);
-}
-.footer__footer {
-  padding-top: 2.5em;
 }
 .footer__footer::before {
   position: absolute;

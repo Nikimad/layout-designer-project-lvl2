@@ -1,5 +1,5 @@
 .footer {
-    padding-block: 4em 3em;
+    padding: 4em 3em;
     &>* {
         max-width: 1200px;
 
@@ -11,8 +11,7 @@
         display: flex;
         gap: 40px;
 
-        padding-bottom: 4.5em;
-
+        margin-bottom: 7em;
         .list {
             flex: 1 1 270px;
         }
@@ -34,7 +33,6 @@
         }
     }
     &__footer {
-        padding-top: 2.5em;
 
         &::before {
             position: absolute;
