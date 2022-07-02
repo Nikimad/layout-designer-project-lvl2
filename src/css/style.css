@@ -216,6 +216,7 @@
   background-color: #3C3B3D;
   border: none;
   border-radius: 50px;
+  outline-style: none;
   padding: 5px 10px;
 }
 
@@ -391,6 +392,7 @@
   background-color: transparent;
   min-width: 270px;
   max-height: 50px;
+  outline-style: none;
   padding: 16px 22.25px 18px;
 }
 .page-description .subscribe-form .input::placeholder {
@@ -407,10 +409,15 @@
   font-weight: 400;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1240px) {
+  .page-description {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 580px) {
   .page-description {
     grid-template-rows: min-content min-content 1em min-content 1em min-content;
-    padding-top: 250px;
   }
   .page-description .subscribe-form {
     grid-template-columns: 1fr;
