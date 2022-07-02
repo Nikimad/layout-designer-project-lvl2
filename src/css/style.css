@@ -168,8 +168,7 @@
   position: absolute;
   top: 25px;
   left: 50%;
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
   align-items: center;
   column-gap: 90px;
   font-size: 11px;
@@ -227,7 +226,7 @@
 }
 @media screen and (max-width: 900px) {
   .header {
-    grid-auto-flow: row;
+    display: grid;
     gap: 18px;
   }
   .header .identic {
