@@ -1,21 +1,23 @@
 .header {
-    .content {
-        position: absolute;
-        left: 50%;
-        display: grid;
-        grid-auto-flow: column;
-        align-items: center;
+    position: absolute;
+    top: 25px;
+    left: 50%;
 
-        column-gap: 90px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
 
-        @include text(11px, 16.5px, 400);
-        @include upCase;
+    column-gap: 90px;
 
-        transform: translateX(-50%);
+    @include text(11px, 16.5px, 400);
+    @include upCase;
 
-        padding-top: 25px;
+    transform: translateX(-50%);
 
-        .identic {
+    max-width: 1200px;
+    width: 100%;
+
+    .identic {
             display: flex;
             align-items: center;
 
@@ -25,9 +27,9 @@
             width: 24px;
             height: 24px;
             }
-        }
+    }
 
-        .nav {
+    .nav {
             display: flex;
             gap: 24px;
             
@@ -41,9 +43,9 @@
                     color: $white;
                 }
             }
-        }
+    }
 
-        .search {
+    .search {
             margin-left: auto;
 
             .input {
@@ -62,58 +64,59 @@
 
                 padding: 5px 10px; 
             }
-        }
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .header {
+        padding-inline: 20px;
     }
 }
 
 @media screen and (max-width: 900px) {
     .header {
-        .content {
-            grid-auto-flow: row;
-            gap: 18px;
+        grid-auto-flow: row;
+        gap: 18px;
 
-            .identic {
-                grid-row: 1 / span 1;
-            }
+        .identic {
+            grid-row: 1 / span 1;
+        }
 
-            .nav {
-                grid-row: 1 / span 1;
+        .nav {
+            grid-row: 1 / span 1;
 
-                margin-left: auto;
-            }
+            margin-left: auto;
+        }
 
-            .search {
-                grid-column: 1 / span 2;
+        .search {
+            grid-column: 1 / span 2;
 
-                margin: 0;
+            margin: 0;
 
-                .input {
-                    width: 100%;
-                }
-            }
+          .input {
+            width: 100%;
+          }
         }
     }
 }
 
 @media screen and (max-width: 500px) {
     .header {
-        .content {
-            .identic {
-                .title {
-                    font-weight: 700;
-                }
-            }
-
-            .nav {
-                grid-row: 2 / span 1;
-
-                flex-direction: column;
-                gap: 3px;
-
+        .identic {
+            .title {
                 font-weight: 700;
-                
-                margin-left: 0;
             }
+        }
+
+        .nav {
+            grid-row: 2 / span 1;
+
+            flex-direction: column;
+            gap: 3px;
+
+            font-weight: 700;
+                
+            margin-left: 0;
         }
     }
 }
