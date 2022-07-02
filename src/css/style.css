@@ -221,7 +221,7 @@
 
 @media screen and (max-width: 1240px) {
   .header {
-    padding-inline: 20px;
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -428,6 +428,11 @@
   .page-description .subscribe-form .btn {
     grid-row: 3/span 1;
     grid-column: 1/span 1;
+  }
+}
+@media screen and (max-width: 580px) {
+  .page-description {
+    padding-top: 250px;
   }
 }
 .pricing-section .section__body {
