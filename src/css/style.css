@@ -190,13 +190,13 @@
   display: flex;
   gap: 24px;
 }
-.header .nav .item {
+.header .nav .nav-item > * {
   color: #CACACA;
   text-decoration: none;
   width: fit-content;
   transition: 0.3s;
 }
-.header .nav .item:hover {
+.header .nav .nav-item > *:hover {
   color: #fff;
 }
 .header .search {
@@ -250,7 +250,7 @@
   .header .nav {
     grid-row: 2/span 1;
     flex-direction: column;
-    gap: 0px;
+    gap: 3px;
     font-weight: 700;
     margin-left: 0;
   }
