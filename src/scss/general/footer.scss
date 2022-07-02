@@ -1,148 +1,81 @@
 .footer {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-
-    background-image: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
-
-    padding: 60px 0 50px;
-
-    &__top,
-    &__bottom {
-        display: flex;
-
+    &>* {
         max-width: 1200px;
 
-        .list {
-            min-width: 270px;
-        
-            list-style: none;
-        
-            transition: 0.3s;
-        
-            margin: 0;
-            padding: 0;
-        
-            &-item {
-                .link {
-                    font: inherit;
-                    color: $gray;
-                    text-decoration: none;
-        
-                    transition: 0.3s;
-                }
-        
-                &:hover .link {
-                    color: $white;
-                }
-            }
-        }
-    }
+        width: 100%;
 
-    &__top {
-        flex-wrap: wrap;
-        justify-content: center;
+        margin-inline: auto;
+    }
+    &__body {
+        display: flex;
         gap: 40px;
 
-        padding-bottom: 70px;
+        padding-block: 4em 4.5em;
 
-        .list-container {
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
+        .list {
+            flex: 1 1 270px;
+        }
 
-            .list-name {
-                text-align: left;
+        .socials {
+            display: grid;
+            grid-template-rows: min-content min-content;
+            grid-template-columns: repeat(4, min-content);
+
+            column-gap: 24px;
+
+            .list-title {
+                grid-column: 1 / span 4;
             }
 
-            .list {
-                &.socials {
-                    display: flex;
-                    gap: 24px;
-
-                    .list-item {
-                        width: 26px;
-                        height: 20px;
-
-                        .link {
-                            display: block;
-
-                            height: 100%;
-
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            background-position: center;
-
-                            transition: 0.3s;
-                        }
-
-                        &:hover .link {
-                            filter: sepia(100%) hue-rotate(230deg) brightness(100%) contrast(100%);
-                        }
-                    }
-                    & :nth-child(1) .link {
-                        background-image: url('../images/Google+.png');
-                    }
-                    & :nth-child(2) .link {
-                        background-image: url('../images/Twitter.png');
-                    }
-                    & :nth-child(3) .link {
-                        background-image: url('../images/Facebook.png');
-                    }
-                    & :nth-child(4) .link {
-                        background-image: url('../images/Instagram.png');
-                    }
-                }
+            .list-item:hover > * {
+                filter: sepia(100%) brightness(200%);
             }
         }
     }
+    &__footer {
+        padding-block: 2.5em 3em;
 
-    &__bottom {
+        &::before {
+            position: absolute;
+            content: '';
+
+            left: 0;
+
+            height: 2px;
+            width: 100%;
+
+            background-color: $d-gray;
+
+            margin-top: -2.5em;
+        }
 
         .list {
             display: flex;
             gap: 1em;
-
-            padding-top: 40px;
-        }
-        &::before {
-            position: absolute;
-            left: 0;
-
-            display: block;
-
-            content: '';
-
-            width: 100%;
-
-            border-bottom: 1px solid $d-gray;
         }
     }
 }
 
-@media screen and (max-width: 1239px) {
+@media screen and (max-width:1200px) {
     .footer {
         padding-inline: 20px;
     }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width:768px) {
     .footer {
-        &__top {
-            justify-content: flex-start;
+        &__body {
+            flex-direction: column;
             gap: 30px;
-        }
 
-        &__bottom {
+            .list {
+                flex-basis: auto;
+            }
+        }
+        &__footer {
             .list {
                 flex-direction: column;
             }
         }
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .footer {
-        padding-inline: 10px;
     }
 }
