@@ -491,7 +491,7 @@
 .pricing-section .section__body-description {
   grid-column: span 3;
   text-align: center;
-  margin-block: 16px 0;
+  margin-block: 24px 0;
 }
 
 @media screen and (max-width: 1199px) {
