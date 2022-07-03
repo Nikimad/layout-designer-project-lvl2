@@ -464,7 +464,7 @@
 }
 .pricing-section .section__body .pricing-item__value {
   grid-row: 3/span 1;
-  justify-self: center;
+  justify-content: center;
   display: grid;
   grid-template-columns: min-content min-content;
   gap: 1rem;
@@ -472,6 +472,7 @@
   line-height: 1em;
   font-weight: 400;
   text-transform: uppercase;
+  width: 100%;
   margin: 0;
 }
 .pricing-section .section__body .pricing-item__value .currency {
