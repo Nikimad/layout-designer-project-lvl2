@@ -4,7 +4,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         column-gap: 25px;
-        row-gap: 25px;
+        row-gap: 26px;
 
         &>:nth-child(1) {
             background-image: url('../images/subscribe_1.png');
@@ -82,7 +82,7 @@
             grid-column: span 3;
             text-align: center;
 
-            margin: 0;
+            margin: 25px 0 0;
         }
     }
 }

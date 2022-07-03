@@ -428,7 +428,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   column-gap: 25px;
-  row-gap: 25px;
+  row-gap: 26px;
 }
 .pricing-section .section__body > :nth-child(1) {
   background-image: url("../images/subscribe_1.png");
@@ -487,7 +487,7 @@
 .pricing-section .section__body-description {
   grid-column: span 3;
   text-align: center;
-  margin: 0;
+  margin: 25px 0 0;
 }
 
 @media screen and (max-width: 1199px) {
