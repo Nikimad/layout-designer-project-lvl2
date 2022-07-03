@@ -1,9 +1,9 @@
 .pricing-section {
     .section__body {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
-        gap: 50px;
+        gap: 26px;
 
         &>:nth-child(1) {
             background-image: url('../images/subscribe_1.png');
@@ -83,7 +83,15 @@
     }
 }
 
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 1200px) {
+    .pricing-section {
+        .section__body {
+            justify-content: center;
+        }
+    }    
+}
+
+@media screen and (max-width: 1000px) {
     .pricing-section {
         .section__body {
             .pricing-item {
