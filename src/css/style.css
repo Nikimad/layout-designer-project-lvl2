@@ -450,6 +450,7 @@
   background-size: cover;
   transition: 0.3s;
   padding: 1.5em;
+  padding-bottom: 4em;
   margin-bottom: 25px;
 }
 .pricing-section .section__body .pricing-item__title {
