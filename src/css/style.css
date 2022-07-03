@@ -433,7 +433,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 26px;
+  column-gap: 26px;
+  row-gap: 50px;
 }
 .pricing-section .section__body > :nth-child(1) {
   background-image: url("../images/subscribe_1.png");
@@ -491,12 +492,17 @@
 .pricing-section .section__body-description {
   grid-column: span 3;
   text-align: center;
-  margin-block: 24px 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 1199px) {
   .pricing-section .section__body {
     justify-content: center;
+  }
+}
+@media screen and (max-width: 571px) {
+  .pricing-section .section__body .pricing-item__title {
+    line-height: 24px;
   }
 }
 .news-section .section__body {

@@ -3,7 +3,8 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 26px;
+        column-gap: 26px;
+        row-gap: 50px;
 
         &>:nth-child(1) {
             background-image: url('../images/subscribe_1.png');
@@ -80,7 +81,7 @@
             grid-column: span 3;
             text-align: center;
 
-            margin-block: 24px 0;
+            margin: 0;
         }
     }
 }
@@ -91,4 +92,16 @@
             justify-content: center;
         }
     }    
+}
+
+@media screen and (max-width:571px) {
+    .pricing-section {
+        .section__body {
+            .pricing-item {
+                &__title {
+                    line-height: 24px;
+                }    
+            }
+        }
+    }
 }
