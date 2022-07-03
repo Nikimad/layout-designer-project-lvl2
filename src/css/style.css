@@ -144,17 +144,11 @@
   display: grid;
   grid-auto-flow: row;
   gap: 3em;
-  max-width: 1200px;
-  padding-top: 100px;
+  max-width: 1240px;
+  padding: 100px 20px 0;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1240px) {
-  .section {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
 @media screen and (max-width: 400px) {
   .section {
     padding-inline: 10px;
@@ -433,8 +427,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  column-gap: 26px;
-  row-gap: 50px;
+  column-gap: 25px;
+  row-gap: 25px;
 }
 .pricing-section .section__body > :nth-child(1) {
   background-image: url("../images/subscribe_1.png");
@@ -456,6 +450,7 @@
   background-size: cover;
   transition: 0.3s;
   padding: 1.5em;
+  margin-bottom: 25px;
 }
 .pricing-section .section__body .pricing-item__title {
   line-height: 36px;

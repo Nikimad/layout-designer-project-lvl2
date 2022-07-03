@@ -3,8 +3,8 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        column-gap: 26px;
-        row-gap: 50px;
+        column-gap: 25px;
+        row-gap: 25px;
 
         &>:nth-child(1) {
             background-image: url('../images/subscribe_1.png');
@@ -33,6 +33,7 @@
             transition: 0.3s;
 
             padding: 1.5em;
+            margin-bottom: 25px;
 
             &__title {
                 line-height: 36px;
