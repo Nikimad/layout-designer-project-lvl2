@@ -497,6 +497,9 @@
   }
 }
 @media screen and (max-width: 571px) {
+  .pricing-section {
+    gap: 45px;
+  }
   .pricing-section .section__body .pricing-item__title {
     line-height: 24px;
   }
