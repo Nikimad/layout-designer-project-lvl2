@@ -3,16 +3,10 @@
     grid-auto-flow: row;
     gap: 3em;
 
+    max-width: 1200px;
+
     padding-top: 100px;
-
-    &__title,
-    &__body {
-        justify-self: center;
-
-        max-width: 1200px;
-
-        width: 100%;
-    }
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 1240px) {

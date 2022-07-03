@@ -144,12 +144,9 @@
   display: grid;
   grid-auto-flow: row;
   gap: 3em;
-  padding-top: 100px;
-}
-.section__title, .section__body {
-  justify-self: center;
   max-width: 1200px;
-  width: 100%;
+  padding-top: 100px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1240px) {
@@ -457,7 +454,6 @@
   background-size: cover;
   transition: 0.3s;
   padding: 1.5em;
-  padding-bottom: 4em;
 }
 .pricing-section .section__body .pricing-item__title {
   line-height: 36px;
@@ -497,7 +493,7 @@
   margin: -10px 0 0;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .pricing-section .section__body {
     justify-content: center;
   }
