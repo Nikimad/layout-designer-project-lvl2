@@ -143,7 +143,7 @@
 .section {
   display: grid;
   grid-auto-flow: row;
-  gap: 45px;
+  gap: 3em;
   max-width: 1240px;
   padding: 100px 20px 0;
   margin: 0 auto;
@@ -428,7 +428,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   column-gap: 25px;
-  row-gap: 34px;
+  row-gap: 35px;
 }
 .pricing-section .section__body > :nth-child(1) {
   background-image: url("../images/subscribe_1.png");
