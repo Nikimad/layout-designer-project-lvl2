@@ -67,7 +67,7 @@
   .h3 {
     font-size: 16px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 400;
   }
   .h4 {
     font-size: 18px;
@@ -458,6 +458,9 @@
   transition: 0.3s;
   padding: 1.5em;
   padding-bottom: 4em;
+}
+.pricing-section .section__body .pricing-item__title {
+  line-height: 36px;
 }
 .pricing-section .section__body .pricing-item__value {
   grid-row: 3/span 1;
