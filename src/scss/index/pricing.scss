@@ -16,10 +16,10 @@
         }
 
         .pricing-item {
-            flex-basis: 30.5%;
-            
             display: grid;
             grid-template-rows: min-content 12.5em min-content 2.5em min-content 4em;
+            grid-template-columns: minmax(auto, 320px);
+
             
             border-radius: 1em;
 
@@ -91,24 +91,4 @@
             justify-content: center;
         }
     }    
-}
-
-@media screen and (max-width: 1000px) {
-    .pricing-section {
-        .section__body {
-            .pricing-item {
-                flex-basis: 374px;
-            }
-        }
-    }    
-}
-
-@media screen and (max-width: 400px) { 
-    .pricing-section {
-        .section__body {
-            .pricing-item {
-                flex-basis: 320px;
-            }
-        }
-    } 
 }
