@@ -226,7 +226,7 @@
 @media screen and (max-width: 900px) {
   .header {
     display: grid;
-    gap: 18px;
+    gap: 17px;
   }
   .header .identic {
     grid-row: 1/span 1;
