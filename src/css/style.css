@@ -268,6 +268,11 @@
   grid-template-columns: repeat(4, min-content);
   column-gap: 24px;
 }
+.footer__body .socials-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .footer__body .socials .list-title {
   grid-column: 1/span 4;
 }

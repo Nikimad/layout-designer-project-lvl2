@@ -23,6 +23,12 @@
 
             column-gap: 24px;
 
+            &-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
             .list-title {
                 grid-column: 1 / span 4;
             }
