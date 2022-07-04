@@ -511,7 +511,6 @@
 }
 .news-section .section__body .news-item {
   display: grid;
-  grid-template-columns: 50% 50%;
   column-gap: 50px;
 }
 .news-section .section__body .news-item__img {
