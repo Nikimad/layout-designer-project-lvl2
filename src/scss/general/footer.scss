@@ -1,19 +1,20 @@
 .footer {
-    padding-top: 3.4em;
+    padding-top: 3.375em;
 
     max-width: 1200px;
     width: 100%;
 
     margin: 0 auto;
-    
+
     &__body {
         display: flex;
         gap: 40px;
 
         margin-bottom: 7em;
         .list {
+            flex: 1 1 22.5%;
             &-title {
-                width: 270px;
+                width: 100%;
             }
         }
 
@@ -62,9 +63,10 @@
     }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1240px) {
     .footer {
-        padding-inline: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 

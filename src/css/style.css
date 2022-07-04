@@ -247,7 +247,7 @@
   }
 }
 .footer {
-  padding-top: 3.4em;
+  padding-top: 3.375em;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -257,8 +257,11 @@
   gap: 40px;
   margin-bottom: 7em;
 }
+.footer__body .list {
+  flex: 1 1 22.5%;
+}
 .footer__body .list-title {
-  width: 270px;
+  width: 100%;
 }
 .footer__body .socials {
   display: grid;
@@ -291,9 +294,10 @@
   gap: 1em;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1240px) {
   .footer {
-    padding-inline: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media screen and (max-width: 768px) {
