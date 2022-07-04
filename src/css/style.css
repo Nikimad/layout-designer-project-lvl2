@@ -571,6 +571,9 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .news-section .section__body {
+    gap: 60px;
+  }
   .news-section .section__body .news-item {
     display: flex;
     flex-direction: column;
