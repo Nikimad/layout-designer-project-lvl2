@@ -1,12 +1,12 @@
 .app-section {
-    padding-bottom: 100px;
-
     .section__body {
         display: flex;
         gap: 144px;
         .content {
             display: grid;
             grid-template-rows: min-content min-content min-content;
+
+            max-width: 600px;
 
             & :nth-child(1) {
                 margin-bottom: 0
