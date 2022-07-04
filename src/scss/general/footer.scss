@@ -1,5 +1,5 @@
 .footer {
-    padding: 4em 2em;
+    padding: 3.5em 2em;
     &>* {
         max-width: 1200px;
 
@@ -13,17 +13,19 @@
 
         margin-bottom: 7em;
         .list {
-            flex: 1 1 270px;
+            &-title {
+                width: 270px;
+            }
         }
 
         .socials {
             display: grid;
             grid-template-rows: min-content min-content;
-            grid-template-columns: repeat(4, min-content);
+            grid-template-columns: repeat(4, minmax(12px, 26px));
 
             column-gap: 24px;
 
-            &-img {
+            .link {
                 display: flex;
                 justify-content: center;
                 align-items: center;
