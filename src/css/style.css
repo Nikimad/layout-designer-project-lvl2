@@ -247,7 +247,7 @@
   }
 }
 .footer {
-  padding: 3.5em 2em;
+  padding: 3.2em 2em;
 }
 .footer > * {
   max-width: 1200px;
@@ -328,6 +328,7 @@
 
 .list {
   list-style: none;
+  width: fit-content;
   margin: 0;
   padding: 0;
 }
