@@ -81,17 +81,6 @@
   font-weight: 400;
 }
 
-.container .content {
-  max-width: 1200px;
-  width: 100%;
-  margin-inline: auto;
-}
-
-@media screen and (max-width: 1200px) {
-  .container .content {
-    padding-inline: 20px;
-  }
-}
 .btn {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
