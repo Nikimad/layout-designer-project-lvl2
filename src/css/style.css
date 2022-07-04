@@ -248,6 +248,7 @@
 }
 .footer {
   padding-top: 3.375em;
+  padding-bottom: 2.25em;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -266,13 +267,14 @@
 .footer__body .socials {
   display: grid;
   grid-template-rows: min-content min-content;
-  grid-template-columns: repeat(4, minmax(12px, 26px));
+  grid-template-columns: repeat(4, min-content);
   column-gap: 24px;
 }
 .footer__body .socials .link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: fit-content;
+  height: fit-content;
 }
 .footer__body .socials .list-title {
   grid-column: 1/span 4;
