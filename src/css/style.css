@@ -572,7 +572,7 @@
 
 @media screen and (max-width: 1199px) {
   .news-section .section__body {
-    gap: 50px;
+    gap: 45px;
   }
   .news-section .section__body .news-item {
     display: flex;
