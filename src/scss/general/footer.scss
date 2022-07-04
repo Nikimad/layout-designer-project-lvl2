@@ -1,12 +1,11 @@
 .footer {
-    padding: 3.4em 4em;
-    &>* {
-        max-width: 1200px;
+    padding-top: 3.4em;
 
-        width: 100%;
+    max-width: 1200px;
+    width: 100%;
 
-        margin-inline: auto;
-    }
+    margin: 0 auto;
+    
     &__body {
         display: flex;
         gap: 40px;
