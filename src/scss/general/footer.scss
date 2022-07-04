@@ -21,7 +21,7 @@
 
         .socials {
             display: grid;
-            grid-template-rows: min-content min-content;
+            grid-template-rows: min-content 24px;
             grid-template-columns: repeat(4, min-content);
 
             column-gap: 24px;
@@ -31,7 +31,6 @@
                 align-items: center;
 
                 width: fit-content;
-                height: fit-content;
             }
 
             .list-title {
@@ -80,7 +79,7 @@
             gap: 30px;
 
             .list {
-                flex-basis: auto;
+                width: 100%;
             }
         }
         &__footer {
