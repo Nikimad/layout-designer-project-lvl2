@@ -239,7 +239,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  padding: 3.375em 0 2.25em 100px;
   max-width: 1240px;
   margin: 0 auto;
 }
