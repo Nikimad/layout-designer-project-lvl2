@@ -239,7 +239,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  padding: 3.375em 20px 2.25em;
+  padding: 3.375em 0 2.25em 100px;
   max-width: 1240px;
   margin: 0 auto;
 }
@@ -249,16 +249,15 @@
 .footer .socials {
   display: grid;
   grid-template-rows: min-content 24px;
-  grid-template-columns: repeat(4, min-content);
+}
+.footer .socials-container {
+  display: flex;
   column-gap: 24px;
 }
 .footer .socials .link {
   display: flex;
   align-items: center;
   width: fit-content;
-}
-.footer .socials .list-title {
-  grid-column: 1/span 4;
 }
 .footer .socials .list-item:hover > * {
   filter: sepia(100%) brightness(200%);

@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     gap: 40px;
 
-    padding: 3.375em 20px 2.25em;
+    padding: 3.375em 0 2.25em 100px;
 
     max-width: 1240px;
 
@@ -17,19 +17,17 @@
     .socials {
         display: grid;
         grid-template-rows: min-content 24px;
-        grid-template-columns: repeat(4, min-content);
 
-        column-gap: 24px;
+        &-container {
+            display: flex;
+            column-gap: 24px;
+        }
 
         .link {
             display: flex;
             align-items: center;
 
             width: fit-content;
-        }
-
-        .list-title {
-            grid-column: 1 / span 4;
         }
 
         .list-item:hover > * {
