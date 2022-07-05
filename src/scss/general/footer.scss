@@ -1,4 +1,8 @@
 .footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
     padding: 3.375em 20px 2.25em;
 
     max-width: 1240px;
@@ -6,43 +10,39 @@
 
     margin: 0 auto;
 
-    &__body {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
+    .list {
+        min-width: 270px;
+    }
 
-        margin-bottom: 7em;
-        .list {
-            min-width: 270px;
-            &-title {
-                width: 100%;
-            }
+
+    .socials {
+        display: grid;
+        grid-template-rows: min-content 24px;
+        grid-template-columns: repeat(4, min-content);
+
+        column-gap: 24px;
+
+        .link {
+            display: flex;
+            align-items: center;
+
+            width: fit-content;
         }
 
-        .socials {
-            display: grid;
-            grid-template-rows: min-content 24px;
-            grid-template-columns: repeat(4, min-content);
+        .list-title {
+            grid-column: 1 / span 4;
+        }
 
-            column-gap: 24px;
-
-            .link {
-                display: flex;
-                align-items: center;
-
-                width: fit-content;
-            }
-
-            .list-title {
-                grid-column: 1 / span 4;
-            }
-
-            .list-item:hover > * {
-                filter: sepia(100%) brightness(200%);
-            }
+        .list-item:hover > * {
+            filter: sepia(100%) brightness(200%);
         }
     }
-    &__footer {
+
+    .nav-alt {
+        display: flex;
+        gap: 16px;
+
+        margin-top: 4em;
 
         &::before {
             position: absolute;
@@ -57,33 +57,28 @@
 
             margin-top: -2.5em;
         }
-
-        .list {
-            display: flex;
-            gap: 1em;
-        }
     }
 }
 
+
+
+
 @media screen and (max-width:768px) {
     .footer {
-        &__body {
             flex-direction: column;
             gap: 30px;
 
             .list {
-                max-width: auto;
+                max-width: 100%;
                 width: 100%;
             }
-        }
-        &__footer {
-            .list {
+
+            .nav-alt {
                 flex-direction: column;
 
                 max-width: 100%;
 
                 width: 100%;
             }
-        }
     }
 }
