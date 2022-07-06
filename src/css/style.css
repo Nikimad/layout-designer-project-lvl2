@@ -238,7 +238,7 @@
 .footer {
   display: grid;
   justify-content: center;
-  padding: 3.375rem 20px 2.25rem;
+  padding: 3.375rem 20px 2.35rem;
 }
 .footer .footer-top {
   display: flex;
