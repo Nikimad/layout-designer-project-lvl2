@@ -75,7 +75,7 @@
     font-weight: 700;
   }
 }
-.popular .section__body .track-info .description .artist, .page-description .section__body .btns-container .btn {
+.popular .section__body .track-info, .page-description .section__body .btns-container .btn {
   font-size: 12.8px;
   line-height: 19.2px;
   font-weight: 400;
@@ -422,6 +422,7 @@
 .popular .section__body .track-info .description .artist {
   margin: 0;
 }
+
 @media screen and (max-width: 768px) {
   .popular .section__body {
     max-height: 500px;
@@ -446,10 +447,14 @@
   margin: 0;
 }
 .discography .section__body .album-info .title {
+  text-align: left;
   text-transform: none;
 }
 
 @media screen and (max-width: 600px) {
+  .discography .section__body .album {
+    max-width: 137px;
+  }
   .discography .section__body .album-img {
     width: 137px;
     height: 137px;

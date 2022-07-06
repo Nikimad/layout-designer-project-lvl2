@@ -20,6 +20,8 @@
                 display: flex;
                 justify-content: space-between;
 
+                @extend %fsmall;
+
                 width: 100%;
                 .description {
                     align-self: center;
@@ -30,12 +32,8 @@
                         margin: 0;
                     }
                     .artist {
-                        @extend %fsmall;
-
                         margin: 0;
                     }
-                }
-                .duration {
                 }
             }
         }
