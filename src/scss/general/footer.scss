@@ -65,11 +65,14 @@
 @media screen and (max-width:768px) {
     .footer {
         .footer-top {
-            gap: 30px;
+            gap: 32px;
 
             .list {
                 max-width: 100%;
                 width: 100%;
+                &-title {
+                    line-height: 27px;
+                }
             }
         }
 

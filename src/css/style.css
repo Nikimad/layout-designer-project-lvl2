@@ -282,11 +282,14 @@
 
 @media screen and (max-width: 768px) {
   .footer .footer-top {
-    gap: 30px;
+    gap: 32px;
   }
   .footer .footer-top .list {
     max-width: 100%;
     width: 100%;
+  }
+  .footer .footer-top .list-title {
+    line-height: 27px;
   }
   .footer .nav-alt {
     flex-direction: column;
