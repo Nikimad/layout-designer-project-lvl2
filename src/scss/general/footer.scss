@@ -2,7 +2,7 @@
     display: grid;
     justify-content: center;
 
-    padding: 3.375rem 20px 2.4rem;
+    padding: 3.375rem 20px 2.5rem;
 
     .footer-top {
       display: flex;
@@ -65,8 +65,8 @@
 @media screen and (max-width:768px) {
     .footer {
         .footer-top {
-            margin-bottom: 90px;
-            
+            margin-bottom: 100px;
+
             .list {
                 max-width: 100%;
                 width: 100%;
@@ -79,6 +79,10 @@
                 max-width: 100%;
 
                 width: 100%;
+
+                &::before {
+                    margin-top: -2em;
+                }
             }
     }
 }
