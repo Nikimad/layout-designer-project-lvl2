@@ -283,7 +283,7 @@
 @media screen and (max-width: 768px) {
   .footer .footer-top {
     gap: 35px;
-    margin-bottom: 125px;
+    margin-bottom: 105px;
   }
   .footer .footer-top .list {
     max-width: 100%;
