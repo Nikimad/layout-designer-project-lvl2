@@ -236,29 +236,33 @@
   }
 }
 .footer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
   max-width: 1240px;
+  padding: 3.375rem 20px 2.25rem;
   margin: 0 auto;
 }
-.footer .list {
+.footer .footer-top {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.footer .footer-top .list {
   min-width: 270px;
 }
-.footer .socials {
+.footer .footer-top .socials {
   display: grid;
   grid-template-rows: min-content 24px;
 }
-.footer .socials-container {
+.footer .footer-top .socials-container {
   display: flex;
   column-gap: 24px;
 }
-.footer .socials .link {
+.footer .footer-top .socials .link {
   display: flex;
   align-items: center;
   width: fit-content;
 }
-.footer .socials .list-item:hover > * {
+.footer .footer-top .socials .list-item:hover > * {
   filter: sepia(100%) brightness(200%);
 }
 .footer .nav-alt {
