@@ -350,13 +350,13 @@
 
 .page-description {
   color: #fff;
-  padding: 250px 0 200px;
+  padding: 200px 0 200px;
 }
 .page-description .section__body {
   max-width: 1240px;
   width: 100%;
   padding: 0 20px;
-  margin-inline: auto;
+  margin: 50px auto 0;
 }
 .page-description .section__body .head {
   text-align: left;
@@ -383,8 +383,8 @@
 }
 
 @media screen and (max-width: 571px) {
-  .page-description {
-    padding-top: 225px;
+  .page-description .section__body {
+    margin-top: 25px;
   }
   .page-description .section__body .btns-container {
     flex-direction: column;
@@ -401,7 +401,7 @@
 .popular .section__body .track {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 16px;
 }
 .popular .section__body .track-img {
   width: 55px;
@@ -434,13 +434,10 @@
   column-gap: 50px;
   row-gap: 25px;
 }
-.discography .section__body .album {
-  display: grid;
-  gap: 18px;
-}
 .discography .section__body .album-img {
   width: 250px;
   height: 250px;
+  margin-bottom: 18px;
 }
 .discography .section__body .album-info .title,
 .discography .section__body .album-info .year {
