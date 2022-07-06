@@ -245,6 +245,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
+  margin-bottom: 120px;
 }
 .footer .footer-top .list {
   min-width: 270px;
@@ -268,7 +269,6 @@
 .footer .nav-alt {
   display: flex;
   gap: 16px;
-  margin-top: 4em;
 }
 .footer .nav-alt::before {
   position: absolute;
