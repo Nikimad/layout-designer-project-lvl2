@@ -11,7 +11,7 @@
         .track {
             display: flex;
             align-items: center;
-            gap: 16px;
+            gap: 15px;
             &-img {
                 width: 55px;
                 height: 55px;
@@ -44,6 +44,10 @@
     .popular {
         .section__body {
             max-height: 500px;
+
+            .track {
+                gap: 14px;
+            }
         }
     }
     
