@@ -466,16 +466,18 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 50px;
-  row-gap: 25px;
+  row-gap: 30px;
   padding-bottom: 100px;
 }
 .similar .section__body .artist {
+  display: grid;
+  gap: 18px;
   max-width: 250px;
 }
 .similar .section__body .artist-img {
+  justify-self: center;
   width: 250px;
   height: 250px;
-  margin-bottom: 18px;
 }
 .similar .section__body .artist-info .name,
 .similar .section__body .artist-info .subscribers {
