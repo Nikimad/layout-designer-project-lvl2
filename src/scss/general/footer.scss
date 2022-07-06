@@ -2,8 +2,8 @@
     display: grid;
     justify-content: center;
 
-    padding: 3.375rem 20px 2.35rem;
-    
+    padding: 3.375rem 20px 2.4rem;
+
     .footer-top {
       display: flex;
       justify-content: center;
@@ -38,6 +38,7 @@
           }
       }
     }
+
     .nav-alt {
         display: flex;
         gap: 16px;
@@ -63,13 +64,14 @@
 
 @media screen and (max-width:768px) {
     .footer {
-            flex-direction: column;
-            gap: 30px;
-
+        .footer-top {
+            margin-bottom: 90px;
+            
             .list {
                 max-width: 100%;
                 width: 100%;
             }
+        }
 
             .nav-alt {
                 flex-direction: column;
