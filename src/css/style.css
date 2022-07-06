@@ -519,8 +519,9 @@
   margin-bottom: 24px;
 }
 .news-section .section__body .news-item__body .news-title {
+  font-size: 30px;
   text-align: left;
-  text-transform: none;
+  text-transform: capitalize;
 }
 .news-section .section__body .news-item__body .news-text {
   margin: 0;
