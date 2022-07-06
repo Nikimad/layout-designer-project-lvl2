@@ -350,14 +350,19 @@
 
 .page-description {
   color: #fff;
-  padding: 200px 0;
+  padding: 250px 0 200px;
 }
 .page-description .section__body {
-  display: grid;
-  grid-template-rows: min-content min-content 2em min-content;
-  justify-content: start;
+  max-width: 1240px;
   width: 100%;
+  padding: 0 20px;
   margin-inline: auto;
+}
+.page-description .section__body .head {
+  text-align: left;
+}
+.page-description .section__body .counter {
+  margin-bottom: 3em;
 }
 .page-description .section__body .btns-container {
   grid-row: 4/span 1;
@@ -373,16 +378,7 @@
 .page-description .section__body .btns-container .btn .icon {
   width: 20px;
   height: 20px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   filter: invert(100%);
-}
-.page-description .section__body .btns-container :nth-child(1) .icon {
-  background-image: url("../images/play-button.svg");
-}
-.page-description .section__body .btns-container :nth-child(2) .icon {
-  background-image: url("../images/heart.svg");
 }
 
 @media screen and (max-width: 571px) {

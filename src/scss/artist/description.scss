@@ -1,15 +1,23 @@
 .page-description {
     color: $white;
 
-    padding: 200px 0;
+    padding: 250px 0 200px;
 
     .section__body {
-        display: grid;
-        grid-template-rows: min-content min-content 2em min-content;
-        justify-content: start;
+        max-width: 1240px;
         width: 100%;
 
+        padding: 0 20px;
+
         margin-inline: auto;
+
+        .head {
+            text-align: left;
+        }
+
+        .counter {
+            margin-bottom: 3em;
+        }
 
         .btns-container {
             grid-row: 4 / span 1;
@@ -30,20 +38,9 @@
                 & .icon {
                    width: 20px;
                    height: 20px;
-                   
-                   background-repeat: no-repeat;
-                   background-size: contain;
-                   background-position: center;
 
                    filter: invert(100%);
                 }
-            }
-
-            & :nth-child(1) .icon {
-                background-image: url('../images/play-button.svg');
-            }
-            & :nth-child(2) .icon {
-                background-image: url('../images/heart.svg');
             }
         }
     }
