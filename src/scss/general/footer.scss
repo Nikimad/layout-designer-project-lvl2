@@ -65,7 +65,9 @@
 @media screen and (max-width:768px) {
     .footer {
         .footer-top {
-            margin-bottom: 110px;
+            gap: 30px;
+
+            margin-bottom: 15px;
 
             .list {
                 max-width: 100%;
@@ -79,10 +81,6 @@
                 max-width: 100%;
 
                 width: 100%;
-
-                &::before {
-                    margin-top: -2.5em;
-                }
             }
     }
 }
