@@ -373,6 +373,7 @@
 .page-description .section__body .btns-container .btn {
   display: flex;
   gap: 16px;
+  color: #fff;
   width: 200px;
 }
 .page-description .section__body .btns-container .btn .icon {
@@ -382,6 +383,9 @@
 }
 
 @media screen and (max-width: 571px) {
+  .page-description {
+    padding-top: 225px;
+  }
   .page-description .section__body .btns-container {
     flex-direction: column;
   }
@@ -483,6 +487,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .similar .section__body {
+    padding-bottom: 0;
+  }
   .similar .section__body .artist {
     max-width: 137px;
   }
