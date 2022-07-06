@@ -243,71 +243,65 @@
   }
 }
 .footer {
-  padding-top: 3.375em;
-  padding-bottom: 2.25em;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-.footer__body {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 7em;
-}
-.footer__body .list {
-  flex: 1 1 22.5%;
-}
-.footer__body .list-title {
-  width: 100%;
-}
-.footer__body .socials {
   display: grid;
-  grid-template-rows: min-content min-content;
-  grid-template-columns: repeat(4, min-content);
+  justify-content: center;
+  padding: 4rem 20px 3rem;
+}
+.footer .footer-top {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 115px;
+}
+.footer .footer-top .list {
+  min-width: 270px;
+}
+.footer .footer-top .socials {
+  display: grid;
+  grid-template-rows: min-content 24px;
+}
+.footer .footer-top .socials-container {
+  display: flex;
   column-gap: 24px;
 }
-.footer__body .socials .link {
+.footer .footer-top .socials .link {
   display: flex;
   align-items: center;
   width: fit-content;
-  height: fit-content;
 }
-.footer__body .socials .list-title {
-  grid-column: 1/span 4;
-}
-.footer__body .socials .list-item:hover > * {
+.footer .footer-top .socials .list-item:hover > * {
   filter: sepia(100%) brightness(200%);
 }
-.footer__footer::before {
+.footer .nav-alt {
+  display: flex;
+  gap: 16px;
+}
+.footer .nav-alt::before {
   position: absolute;
   content: "";
   left: 0;
   height: 2px;
   width: 100%;
   background-color: #CACACA;
-  margin-top: -2.5em;
-}
-.footer__footer .list {
-  display: flex;
-  gap: 1em;
+  margin-top: -2.75em;
 }
 
-@media screen and (max-width: 1240px) {
-  .footer {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
 @media screen and (max-width: 768px) {
-  .footer__body {
-    flex-direction: column;
+  .footer .footer-top {
     gap: 30px;
   }
-  .footer__body .list {
-    flex-basis: auto;
+  .footer .footer-top .list {
+    max-width: 100%;
+    width: 100%;
   }
-  .footer__footer .list {
+  .footer .footer-top .list-title {
+    line-height: 27px;
+  }
+  .footer .nav-alt {
     flex-direction: column;
+    max-width: 100%;
+    width: 100%;
   }
 }
 * {
