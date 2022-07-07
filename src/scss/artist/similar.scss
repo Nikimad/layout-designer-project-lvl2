@@ -2,6 +2,7 @@
   .section__body {
     display: flex;
     flex-wrap: wrap;
+
     column-gap: 50px;
     row-gap: 20px;
 
@@ -23,8 +24,9 @@
       &-info {
         .name,
         .subscribers {
-          text-align: center;
           margin: 0;
+
+          text-align: center;
         }
 
         .subscribers {

@@ -3,9 +3,10 @@
     display: flex;
     flex-flow: column wrap;
     row-gap: 25px;
-    column-gap: 50px;
 
     max-height: 250px;
+
+    column-gap: 50px;
 
     .track {
       display: flex;
@@ -21,8 +22,8 @@
       &-info {
         display: flex;
 
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
 
         @extend %fsmall;
 
@@ -34,9 +35,9 @@
           .title {
             @extend %fsmall-bold;
 
-            color: $white;
-
             margin: 0;
+
+            color: $white;
           }
 
           .artist {

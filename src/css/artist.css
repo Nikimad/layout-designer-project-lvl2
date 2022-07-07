@@ -400,8 +400,8 @@
   display: flex;
   flex-flow: column wrap;
   row-gap: 25px;
-  column-gap: 50px;
   max-height: 250px;
+  column-gap: 50px;
 }
 .popular .section__body .track {
   display: flex;
@@ -413,16 +413,16 @@
 }
 .popular .section__body .track-info {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 .popular .section__body .track-info .description {
   display: grid;
 }
 .popular .section__body .track-info .description .title {
-  color: #fff;
   margin: 0;
+  color: #fff;
 }
 .popular .section__body .track-info .description .artist {
   margin: 0;
@@ -489,8 +489,8 @@
 }
 .similar .section__body .artist-info .name,
 .similar .section__body .artist-info .subscribers {
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 .similar .section__body .artist-info .subscribers {
   font-size: 18px;
