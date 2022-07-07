@@ -10,16 +10,17 @@
       flex-direction: column;
 
       max-width: 250px;
+      
       &-img {
-        
+
         justify-self: center;
         width: 250px;
         height: 250px;
 
         margin-bottom: 18px;
       }
+      
       &-info {
-
         .name,
         .subscribers {
           text-align: center;
@@ -44,6 +45,7 @@
     .section__body {
       .artist {
         max-width: 137px;
+
         &-img {
 
           width: 137px;

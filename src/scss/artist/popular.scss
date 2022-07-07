@@ -6,15 +6,18 @@
     column-gap: 50px;
 
     max-height: 250px;
+    
     .track {
       display: flex;
-      
+
       gap: 15px;
+
       &-img {
         width: 55px;
 
         height: 55px;
       }
+
       &-info {
         display: flex;
 
@@ -24,18 +27,19 @@
         @extend %fsmall;
 
         width: 100%;
+
         .description {
           display: grid;
-          .title {
 
+          .title {
             @extend %fsmall-bold;
 
             color: $white;
 
             margin: 0;
           }
-          .artist {
 
+          .artist {
             margin: 0;
           }
         }
