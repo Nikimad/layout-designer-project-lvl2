@@ -155,9 +155,9 @@
   font-weight: 400;
   line-height: 16.5px;
   text-transform: uppercase;
-  transform: translateX(-50%);
-  max-width: 1200px;
   width: 100%;
+  max-width: 1200px;
+  transform: translateX(-50%);
 }
 .header .identic {
   display: flex;
@@ -189,15 +189,15 @@
   font-weight: 400;
   line-height: 15.5px;
   text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
   color: #757575;
+  font-family: Arial, Helvetica, sans-serif;
   min-width: 248px;
   height: 25px;
   background-color: #3c3b3d;
   border: none;
   border-radius: 50px;
-  outline-style: none;
   padding: 5px 10px;
+  outline-style: none;
 }
 
 @media screen and (max-width: 1240px) {
@@ -232,8 +232,8 @@
   .header .nav {
     display: block;
     grid-row: 2/span 1;
-    font-weight: 700;
     margin-left: 0;
+    font-weight: 700;
   }
 }
 .footer {
@@ -243,8 +243,8 @@
 }
 .footer .footer-top {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
   margin-bottom: 115px;
 }
@@ -273,12 +273,12 @@
 }
 .footer .nav-alt::before {
   position: absolute;
-  content: "";
   left: 0;
-  height: 2px;
   width: 100%;
-  background-color: #cacaca;
+  height: 2px;
   margin-top: -2.75em;
+  background-color: #cacaca;
+  content: "";
 }
 
 @media screen and (max-width: 768px) {
@@ -286,8 +286,8 @@
     gap: 30px;
   }
   .footer .footer-top .list {
-    max-width: 100%;
     width: 100%;
+    max-width: 100%;
   }
   .footer .footer-top .list-title {
     line-height: 27px;
@@ -351,23 +351,23 @@
   display: grid;
   grid-template-rows: min-content min-content 2em min-content 1em min-content;
   justify-content: center;
-  color: #fff;
   padding: 200px 0;
+  color: #fff;
 }
 .page-description .caption {
   grid-row-start: 4;
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 .page-description .subscribe-form {
   grid-row-start: 6;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: 50px 50px;
+  grid-template-columns: 1fr 1fr;
   gap: 24px;
-  max-width: 570px;
-  width: 100%;
   justify-self: center;
+  width: 100%;
+  max-width: 570px;
 }
 .page-description .subscribe-form .input {
   font-size: 14px;
@@ -376,11 +376,11 @@
   color: #fff;
   border: 2px solid #cacaca;
   border-radius: 3px;
-  background-color: transparent;
   min-width: 270px;
   max-height: 50px;
-  outline-style: none;
+  background-color: transparent;
   padding: 16px 22.25px 18px;
+  outline-style: none;
 }
 .page-description .subscribe-form .input::placeholder {
   font-size: 14px;
@@ -398,8 +398,8 @@
 
 @media screen and (max-width: 1240px) {
   .page-description {
-    padding-left: 20px;
     padding-right: 20px;
+    padding-left: 20px;
   }
 }
 @media screen and (max-width: 580px) {
@@ -410,8 +410,8 @@
     margin-top: 50px;
   }
   .page-description .subscribe-form {
-    grid-template-columns: 1fr;
     grid-template-rows: repeat(3, min-content);
+    grid-template-columns: 1fr;
   }
   .page-description .subscribe-form :nth-child(2) {
     grid-row: 2/span 1;
