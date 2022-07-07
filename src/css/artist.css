@@ -71,7 +71,7 @@
   }
   .h4 {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 27px;
     font-weight: 700;
   }
 }
@@ -457,7 +457,7 @@
 }
 .discography .section__body .album-info .title {
   text-align: left;
-  text-transform: none;
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 600px) {
