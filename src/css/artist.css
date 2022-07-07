@@ -442,7 +442,7 @@
 .discography .section__body .album-img {
   width: 250px;
   height: 250px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 .discography .section__body .album-info .title,
 .discography .section__body .album-info .year {
@@ -479,7 +479,7 @@
   justify-self: center;
   width: 250px;
   height: 250px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 .similar .section__body .artist-info .name,
 .similar .section__body .artist-info .subscribers {
