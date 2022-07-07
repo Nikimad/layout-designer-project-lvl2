@@ -423,8 +423,8 @@
 }
 .pricing-section .section__body {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   column-gap: 25px;
   row-gap: 35px;
 }
@@ -441,23 +441,23 @@
   display: grid;
   grid-template-rows: min-content 12.5em min-content 2.5em min-content 4em;
   grid-template-columns: minmax(auto, 320px);
-  border-radius: 1em;
   color: #fff;
+  border-radius: 1em;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: 0.3s;
   padding: 1.5em;
-  padding-bottom: 2.5em;
   margin-bottom: 25px;
+  padding-bottom: 2.5em;
+  transition: 0.3s;
 }
 .pricing-section .section__body .pricing-item__title {
   line-height: 36px;
 }
 .pricing-section .section__body .pricing-item__value {
+  display: grid;
   grid-row: 3/span 1;
   justify-content: center;
-  display: grid;
   grid-template-columns: min-content min-content;
   gap: 1rem;
   font-size: 4em;
@@ -485,8 +485,8 @@
 }
 .pricing-section .section__body-description {
   grid-column: span 3;
-  text-align: center;
   margin: 16px 0 0;
+  text-align: center;
 }
 
 @media screen and (max-width: 1199px) {
@@ -517,9 +517,9 @@
   height: 100%;
 }
 .news-section .section__body .news-item__body {
+  display: flex;
   grid-column: 2/span 1;
   max-width: 575px;
-  display: flex;
   flex-direction: column;
   gap: 30px;
   margin-bottom: 24px;
@@ -533,8 +533,8 @@
   margin: 0;
 }
 .news-section .section__body .news-item__footer {
-  grid-column: 2/span 1;
   display: flex;
+  grid-column: 2/span 1;
   flex-direction: column;
   gap: 3em;
 }

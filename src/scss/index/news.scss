@@ -5,6 +5,7 @@
 
     .news-item {
       display: grid;
+
       column-gap: 50px;
 
       &__img {
@@ -15,11 +16,12 @@
       }
 
       &__body {
+        display: flex;
+
         grid-column: 2 / span 1;
 
         max-width: 575px;
 
-        display: flex;
         flex-direction: column;
         gap: 30px;
 
@@ -37,9 +39,10 @@
       }
 
       &__footer {
+        display: flex;
+        
         grid-column: 2 / span 1;
 
-        display: flex;
         flex-direction: column;
         gap: 3em;
 

@@ -1,8 +1,9 @@
 .pricing-section {
   .section__body {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+
     column-gap: 25px;
     row-gap: 35px;
 
@@ -23,30 +24,32 @@
       grid-template-rows: min-content 12.5em min-content 2.5em min-content 4em;
       grid-template-columns: minmax(auto, 320px);
 
+      color: $white;
+
       border-radius: 1em;
 
-      color: $white;
       text-align: center;
 
       background-repeat: no-repeat;
       background-size: cover;
 
-      transition: 0.3s;
-
       padding: 1.5em;
-      padding-bottom: 2.5em;
       margin-bottom: 25px;
+      padding-bottom: 2.5em;
+
+      transition: 0.3s;
 
       &__title {
         line-height: 36px;
       }
 
       &__value {
+        display: grid;
+
         grid-row: 3 / span 1;
 
         justify-content: center;
 
-        display: grid;
         grid-template-columns: min-content min-content;
         gap: 1rem;
 
@@ -83,9 +86,10 @@
 
     &-description {
       grid-column: span 3;
-      text-align: center;
 
       margin: 16px 0 0;
+
+      text-align: center;
     }
   }
 }
@@ -94,6 +98,7 @@
   .pricing-section {
     .section__body {
       row-gap: 40px;
+      
       justify-content: center;
     }
   }
