@@ -297,6 +297,11 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 400px) {
+  .footer {
+    padding-inline: 10px;
+  }
+}
 * {
   box-sizing: border-box;
 }
