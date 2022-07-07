@@ -477,21 +477,25 @@
 }
 .similar .section__body .artist {
   display: grid;
-  gap: 18px;
   max-width: 250px;
 }
 .similar .section__body .artist-img {
   justify-self: center;
   width: 250px;
   height: 250px;
+  margin-bottom: 18px;
 }
 .similar .section__body .artist-info .name,
 .similar .section__body .artist-info .subscribers {
   text-align: center;
   margin: 0;
 }
+.similar .section__body .artist-info .subscribers {
+  font-size: 18px;
+  line-height: 1.5;
+}
 .similar .section__body .artist-info .name {
-  text-transform: none;
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 600px) {
