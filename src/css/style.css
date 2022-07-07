@@ -20,11 +20,11 @@
 }
 
 .f-dark-gray {
-  color: #CACACA;
+  color: #cacaca;
 }
 
 .f-orange {
-  color: #F89202;
+  color: #f89202;
 }
 
 /* Desktop typography */
@@ -99,13 +99,13 @@
   border-radius: 32px;
 }
 .btn_green {
-  background-color: #34C176;
+  background-color: #34c176;
 }
 .btn_red {
-  background-color: #95390C;
+  background-color: #95390c;
 }
 .btn_purple {
-  background-color: #5328A1;
+  background-color: #5328a1;
 }
 .btn_tp {
   background-color: transparent;
@@ -114,7 +114,7 @@
   border: 1px solid #fff;
 }
 .btn_b-dark-gray {
-  border: 1px solid #CACACA;
+  border: 1px solid #cacaca;
 }
 .btn_fit {
   width: fit-content;
@@ -172,7 +172,7 @@
   gap: 24px;
 }
 .header .nav .nav-item > * {
-  color: #CACACA;
+  color: #cacaca;
   text-decoration: none;
   width: fit-content;
   transition: 0.3s;
@@ -192,7 +192,7 @@
   color: #757575;
   min-width: 248px;
   height: 25px;
-  background-color: #3C3B3D;
+  background-color: #3c3b3d;
   border: none;
   border-radius: 50px;
   outline-style: none;
@@ -276,7 +276,7 @@
   left: 0;
   height: 2px;
   width: 100%;
-  background-color: #CACACA;
+  background-color: #cacaca;
   margin-top: -2.75em;
 }
 
@@ -308,7 +308,7 @@
 
 .body {
   font: 16px/1.5 "Roboto", sans;
-  color: #CACACA;
+  color: #cacaca;
   background-color: #08020d;
   margin: 0;
 }
@@ -373,7 +373,7 @@
   line-height: 16.5px;
   font-weight: 700;
   color: #fff;
-  border: 2px solid #CACACA;
+  border: 2px solid #cacaca;
   border-radius: 3px;
   background-color: transparent;
   min-width: 270px;
