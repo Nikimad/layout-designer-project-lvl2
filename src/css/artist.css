@@ -437,7 +437,7 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 50px;
-  row-gap: 25px;
+  row-gap: 22px;
 }
 .discography .section__body .album {
   display: flex;
@@ -474,7 +474,7 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 50px;
-  row-gap: 23px;
+  row-gap: 20px;
 }
 .similar .section__body .artist {
   display: flex;
