@@ -32,9 +32,9 @@
     gap: 24px;
 
     .nav-item > * {
-      color: $d-gray;
-
       width: fit-content;
+
+      color: $d-gray;
 
       text-decoration: none;
 
@@ -52,13 +52,14 @@
     .input {
       @include text(13.5px, 15.5px, 400);
       @include up-case;
-      color: #757575;
 
       min-width: 248px;
 
-      font-family: Arial, Helvetica, sans-serif;
-
       height: 25px;
+
+      color: #757575;
+
+      font-family: Arial, Helvetica, sans-serif;
 
       padding: 5px 10px;
 

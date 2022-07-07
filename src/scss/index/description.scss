@@ -32,15 +32,15 @@
     .input {
       @include text(14px, 16.5px, 700);
 
-      color: $white;
-
       min-width: 270px;
       max-height: 50px;
 
-      border: 2px solid $d-gray;
-      border-radius: 3px;
+      color: $white;
 
       padding: 16px 22.25px 18px;
+
+      border: 2px solid $d-gray;
+      border-radius: 3px;
 
       background-color: transparent;
 
