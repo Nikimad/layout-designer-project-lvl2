@@ -393,7 +393,7 @@
 .popular .section__body {
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  row-gap: 23px;
   column-gap: 50px;
   flex-wrap: wrap;
   max-height: 250px;
