@@ -2,6 +2,7 @@
   .section__body {
     display: flex;
     gap: 144px;
+    
     .content {
       display: grid;
       grid-template-rows: min-content min-content min-content;
@@ -16,6 +17,7 @@
         @extend %fsmall;
       }
     }
+
     .img {
       width: 333px;
       height: auto;
@@ -28,9 +30,11 @@
     .section__body {
       flex-direction: column;
       gap: 0;
+
       .content {
         order: 1;
       }
+
       .img {
         align-self: center;
 

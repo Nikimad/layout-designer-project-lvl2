@@ -1,16 +1,16 @@
-@import "./variables.scss";
-@import "./typography.scss";
-@import "./btn.scss";
-@import "./section.scss";
-@import "./header.scss";
-@import "./footer.scss";
+@import "./variables";
+@import "./typography";
+@import "./btn";
+@import "./section";
+@import "./header";
+@import "./footer";
 
 * {
   box-sizing: border-box;
 }
 
 .body {
-  font: 16px/1.5 "Roboto", sans;
+  font: 16px/1.5 Roboto, sans;
   color: $d-gray;
 
   background-color: #08020d;

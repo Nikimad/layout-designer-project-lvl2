@@ -1,22 +1,23 @@
 .popular {
   .section__body {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     row-gap: 25px;
     column-gap: 50px;
-
-    flex-wrap: wrap;
 
     max-height: 250px;
     .track {
       display: flex;
+      
       gap: 15px;
       &-img {
         width: 55px;
+
         height: 55px;
       }
       &-info {
         display: flex;
+
         justify-content: space-between;
         align-items: center;
 
@@ -26,12 +27,15 @@
         .description {
           display: grid;
           .title {
+
             @extend %fsmall-bold;
+
             color: $white;
 
             margin: 0;
           }
           .artist {
+
             margin: 0;
           }
         }

@@ -13,6 +13,7 @@
         max-width: 575px;
         height: 100%;
       }
+      
       &__body {
         grid-column: 2 / span 1;
 
@@ -29,10 +30,12 @@
           text-align: left;
           text-transform: capitalize;
         }
+
         .news-text {
           margin: 0;
         }
       }
+
       &__footer {
         grid-column: 2 / span 1;
 
@@ -51,13 +54,16 @@
             width: 19px;
             height: 19px;
           }
+
           &__name {
             margin: 0;
           }
+
           &__date {
             margin: 0;
           }
         }
+
         .btn {
           margin-bottom: 1em;
         }
@@ -68,9 +74,11 @@
       &__img {
         grid-column: 2 / span 1;
       }
+
       &__body {
         grid-column: 1 / span 1;
       }
+
       &__footer {
         grid-column: 1 / span 1;
       }
@@ -82,6 +90,7 @@
   .news-section {
     .section__body {
       gap: 45px;
+
       .news-item {
         display: flex;
         flex-direction: column;
@@ -95,6 +104,7 @@
 
         &__body {
           gap: 16px;
+
           .news-title {
             @include text(16px, 24px, 400);
           }

@@ -9,9 +9,11 @@
     & > :nth-child(1) {
       background-image: url("../images/subscribe_1.png");
     }
+    
     & > :nth-child(2) {
       background-image: url("../images/subscribe_2.png");
     }
+
     & > :nth-child(3) {
       background-image: url("../images/subscribe_3.png");
     }
@@ -38,6 +40,7 @@
       &__title {
         line-height: 36px;
       }
+
       &__value {
         grid-row: 3 / span 1;
 
@@ -99,6 +102,7 @@
 @media screen and (max-width: 571px) {
   .pricing-section {
     gap: 40px;
+
     .section__body {
       .pricing-item {
         &__title {
