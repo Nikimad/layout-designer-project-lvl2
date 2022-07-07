@@ -1,111 +1,110 @@
 .pricing-section {
-    .section__body {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        column-gap: 25px;
-        row-gap: 35px;
+  .section__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 35px;
 
-        &>:nth-child(1) {
-            background-image: url('../images/subscribe_1.png');
-        }
-        &>:nth-child(2) {
-            background-image: url('../images/subscribe_2.png');;
-        }
-        &>:nth-child(3) {
-            background-image: url('../images/subscribe_3.png');;
-        }
-
-        .pricing-item {
-            display: grid;
-            grid-template-rows: min-content 12.5em min-content 2.5em min-content 4em;
-            grid-template-columns: minmax(auto, 320px);
-
-            
-            border-radius: 1em;
-
-            color: $white;
-            text-align: center;
-
-            background-repeat: no-repeat;
-            background-size: cover;
-
-            transition: 0.3s;
-
-            padding: 1.5em;
-            padding-bottom: 2.5em;
-            margin-bottom: 25px;
-
-            &__title {
-                line-height: 36px;
-            }
-            &__value {
-                grid-row: 3 / span 1;
-
-                justify-content: center;
-
-                display: grid;
-                grid-template-columns: min-content min-content;
-                gap: 1rem;
-
-                @include text(4em, 1em, 400);
-                @include upCase;
-
-                width: 100%;
-
-                margin: 0;
-
-                .currency {
-                    grid-column: 2 / span 1;
-
-                    @include text(32px, 48px, 400);
-                }
-            }
-
-            .btn {
-                grid-row: 5 / span 1;
-            }
-
-            &__description {
-                grid-row: 7 / span 1;
-
-                @extend %fsmall;
-
-                margin: 0;
-            }
-
-            &:hover {
-                transform: scale(1.05);
-            }
-        }
-
-        &-description {
-            grid-column: span 3;
-            text-align: center;
-
-            margin: 16px 0 0;
-        }
+    & > :nth-child(1) {
+      background-image: url("../images/subscribe_1.png");
     }
+    & > :nth-child(2) {
+      background-image: url("../images/subscribe_2.png");
+    }
+    & > :nth-child(3) {
+      background-image: url("../images/subscribe_3.png");
+    }
+
+    .pricing-item {
+      display: grid;
+      grid-template-rows: min-content 12.5em min-content 2.5em min-content 4em;
+      grid-template-columns: minmax(auto, 320px);
+
+      border-radius: 1em;
+
+      color: $white;
+      text-align: center;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      transition: 0.3s;
+
+      padding: 1.5em;
+      padding-bottom: 2.5em;
+      margin-bottom: 25px;
+
+      &__title {
+        line-height: 36px;
+      }
+      &__value {
+        grid-row: 3 / span 1;
+
+        justify-content: center;
+
+        display: grid;
+        grid-template-columns: min-content min-content;
+        gap: 1rem;
+
+        @include text(4em, 1em, 400);
+        @include upCase;
+
+        width: 100%;
+
+        margin: 0;
+
+        .currency {
+          grid-column: 2 / span 1;
+
+          @include text(32px, 48px, 400);
+        }
+      }
+
+      .btn {
+        grid-row: 5 / span 1;
+      }
+
+      &__description {
+        grid-row: 7 / span 1;
+
+        @extend %fsmall;
+
+        margin: 0;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    &-description {
+      grid-column: span 3;
+      text-align: center;
+
+      margin: 16px 0 0;
+    }
+  }
 }
 
 @media screen and (max-width: 1199px) {
-    .pricing-section {
-        .section__body {
-            row-gap: 40px;
-            justify-content: center;
-        }
-    }    
+  .pricing-section {
+    .section__body {
+      row-gap: 40px;
+      justify-content: center;
+    }
+  }
 }
 
-@media screen and (max-width:571px) {
-    .pricing-section {
-        gap: 40px;
-        .section__body {
-            .pricing-item {
-                &__title {
-                    line-height: 24px;
-                }    
-            }
+@media screen and (max-width: 571px) {
+  .pricing-section {
+    gap: 40px;
+    .section__body {
+      .pricing-item {
+        &__title {
+          line-height: 24px;
         }
+      }
     }
+  }
 }

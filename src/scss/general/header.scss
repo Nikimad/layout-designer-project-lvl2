@@ -1,123 +1,123 @@
 .header {
-    position: absolute;
-    top: 25px;
-    left: 50%;
+  position: absolute;
+  top: 25px;
+  left: 50%;
 
+  display: flex;
+  align-items: center;
+  column-gap: 90px;
+
+  @include text(11px, 16.5px, 400);
+  @include upCase;
+
+  transform: translateX(-50%);
+
+  max-width: 1200px;
+  width: 100%;
+
+  .identic {
     display: flex;
     align-items: center;
-    column-gap: 90px;
 
-    @include text(11px, 16.5px, 400);
-    @include upCase;
+    gap: 16px;
 
-    transform: translateX(-50%);
-
-    max-width: 1200px;
-    width: 100%;
-
-    .identic {
-            display: flex;
-            align-items: center;
-
-            gap: 16px;
-
-            .logo {
-            width: 24px;
-            height: 24px;
-            }
+    .logo {
+      width: 24px;
+      height: 24px;
     }
+  }
 
-    .nav {
-            display: flex;
-            gap: 24px;
-            
-            .nav-item > * {
-                color: $d-gray;
-                text-decoration: none;
+  .nav {
+    display: flex;
+    gap: 24px;
 
-                width: fit-content;
+    .nav-item > * {
+      color: $d-gray;
+      text-decoration: none;
 
-                transition: 0.3s;
+      width: fit-content;
 
-                &:hover {
-                    color: $white;
-                }
-            }
+      transition: 0.3s;
+
+      &:hover {
+        color: $white;
+      }
     }
+  }
 
-    .search {
-            margin-left: auto;
+  .search {
+    margin-left: auto;
 
-            .input {
-                @include text(13.5px, 15.5px, 400);
-                @include upCase;
-                font-family: Arial, Helvetica, sans-serif;
-                color: #757575;
+    .input {
+      @include text(13.5px, 15.5px, 400);
+      @include upCase;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #757575;
 
-                min-width: 248px;
-                height: 25px;
+      min-width: 248px;
+      height: 25px;
 
-                background-color: $dark;
+      background-color: $dark;
 
-                border: none;
-                border-radius: 50px;
+      border: none;
+      border-radius: 50px;
 
-                outline-style: none;
+      outline-style: none;
 
-                padding: 5px 10px; 
-            }
+      padding: 5px 10px;
     }
+  }
 }
 
 @media screen and (max-width: 1240px) {
-    .header {
-        padding: 0 20px;
-    }
+  .header {
+    padding: 0 20px;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .header {
-        display: grid;
-        gap: 17px;
+  .header {
+    display: grid;
+    gap: 17px;
 
-        .identic {
-            grid-row: 1 / span 1;
-        }
-
-        .nav {
-            grid-row: 1 / span 1;
-
-            margin-left: auto;
-        }
-
-        .search {
-            grid-column: 1 / span 2;
-
-            margin: 0;
-
-          .input {
-            width: 100%;
-          }
-        }
+    .identic {
+      grid-row: 1 / span 1;
     }
+
+    .nav {
+      grid-row: 1 / span 1;
+
+      margin-left: auto;
+    }
+
+    .search {
+      grid-column: 1 / span 2;
+
+      margin: 0;
+
+      .input {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .header {
-        .identic {
-            .title {
-                font-weight: 700;
-            }
-        }
-
-        .nav {
-            display: block;
-
-            grid-row: 2 / span 1;
-
-            font-weight: 700;
-                
-            margin-left: 0;
-        }
+  .header {
+    .identic {
+      .title {
+        font-weight: 700;
+      }
     }
+
+    .nav {
+      display: block;
+
+      grid-row: 2 / span 1;
+
+      font-weight: 700;
+
+      margin-left: 0;
+    }
+  }
 }

@@ -1,50 +1,49 @@
 .popular {
-    .section__body {
+  .section__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    column-gap: 50px;
+
+    flex-wrap: wrap;
+
+    max-height: 250px;
+    .track {
+      display: flex;
+      gap: 15px;
+      &-img {
+        width: 55px;
+        height: 55px;
+      }
+      &-info {
         display: flex;
-        flex-direction: column;
-        row-gap: 25px;
-        column-gap: 50px;
+        justify-content: space-between;
+        align-items: center;
 
-        flex-wrap: wrap;
+        @extend %fsmall;
 
-        max-height: 250px;
-        .track {
-            display: flex;
-            gap: 15px;
-            &-img {
-                width: 55px;
-                height: 55px;
-            }
-            &-info {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+        width: 100%;
+        .description {
+          display: grid;
+          .title {
+            @extend %fsmall-bold;
+            color: $white;
 
-                @extend %fsmall;
-
-                width: 100%;
-                .description {
-                    display: grid;
-                    .title {
-                        @extend %fsmall-bold;
-                        color: $white;
-                        
-                        margin: 0;
-                    }
-                    .artist {
-                        margin: 0;
-                    }
-                }
-            }
+            margin: 0;
+          }
+          .artist {
+            margin: 0;
+          }
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .popular {
-        .section__body {
-            max-height: 500px;
-        }
+  .popular {
+    .section__body {
+      max-height: 500px;
     }
-    
+  }
 }

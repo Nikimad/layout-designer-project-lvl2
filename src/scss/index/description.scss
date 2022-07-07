@@ -1,89 +1,89 @@
 .page-description {
+  display: grid;
+  grid-template-rows: min-content min-content 2em min-content 1em min-content;
+  justify-content: center;
+
+  color: $white;
+
+  padding: 200px 0;
+
+  .caption {
+    grid-row-start: 4;
+    text-align: center;
+    margin: 0;
+  }
+  .subscribe-form {
+    grid-row-start: 6;
+
     display: grid;
-    grid-template-rows: min-content min-content 2em min-content 1em min-content;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    gap: 24px;
 
-    color: $white;
+    max-width: 570px;
+    width: 100%;
 
-    padding: 200px 0;
+    justify-self: center;
 
-    .caption {
-        grid-row-start: 4;
-        text-align: center;
-        margin: 0;
+    .input {
+      @include text(14px, 16.5px, 700);
+
+      color: $white;
+
+      border: 2px solid $d-gray;
+      border-radius: 3px;
+
+      background-color: transparent;
+
+      min-width: 270px;
+      max-height: 50px;
+
+      outline-style: none;
+
+      padding: 16px 22.25px 18px;
+
+      &::placeholder {
+        @include text(14px, 16px, 700);
+        color: $white;
+      }
     }
-    .subscribe-form {
-        grid-row-start: 6;
 
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50px 50px;
-        gap: 24px;
+    .btn {
+      grid-row-start: 2;
+      grid-column: 1 / span 2;
 
-        max-width: 570px;
-        width: 100%;
-
-        justify-self: center;
-
-        .input {
-            @include text(14px, 16.5px, 700);
-
-            color: $white;
-
-            border: 2px solid $d-gray;
-            border-radius: 3px;
-
-            background-color: transparent;
-
-            min-width: 270px;
-            max-height: 50px;
-
-            outline-style: none;
-
-            padding: 16px 22.25px 18px;
-
-            &::placeholder {
-                @include text(14px, 16px, 700);
-                color: $white;
-            }
-        }
-
-        .btn {
-            grid-row-start: 2;
-            grid-column: 1 / span 2;
-
-            @include text(13.5px, 15px, 400);
-        }
+      @include text(13.5px, 15px, 400);
     }
+  }
 }
 
-@media screen and (max-width:1240px) {
-    .page-description {
-        padding-left: 20px;
-        padding-right: 20px;
-    }    
+@media screen and (max-width: 1240px) {
+  .page-description {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media screen and (max-width: 580px) {
-    .page-description {
-        grid-template-rows: min-content min-content 1em min-content 1em min-content;
+  .page-description {
+    grid-template-rows: min-content min-content 1em min-content 1em min-content;
 
-        .h1 {
-            margin-top: 50px;
-        }
-
-        .subscribe-form {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, min-content);
-
-            & :nth-child(2) {
-                grid-row: 2 / span 1;
-            }
-
-            .btn {
-                grid-row: 3 / span 1;
-                grid-column: 1 / span 1;
-            }
-        }
+    .h1 {
+      margin-top: 50px;
     }
+
+    .subscribe-form {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, min-content);
+
+      & :nth-child(2) {
+        grid-row: 2 / span 1;
+      }
+
+      .btn {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+      }
+    }
+  }
 }

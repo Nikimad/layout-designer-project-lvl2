@@ -1,94 +1,89 @@
 .footer {
-    display: grid;
+  display: grid;
+  justify-content: center;
+
+  padding: 4rem 20px 3rem;
+
+  .footer-top {
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
 
-    padding: 4rem 20px 3rem;
+    margin-bottom: 115px;
 
-    .footer-top {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 40px;
+    .list {
+      min-width: 270px;
+    }
 
-      margin-bottom: 115px;
+    .socials {
+      display: grid;
+      grid-template-rows: min-content 24px;
 
-      .list {
-         min-width: 270px;
+      &-container {
+        display: flex;
+        column-gap: 24px;
       }
 
+      .link {
+        display: flex;
+        align-items: center;
 
-      .socials {
-          display: grid;
-          grid-template-rows: min-content 24px;
+        width: fit-content;
+      }
 
-          &-container {
-            display: flex;
-            column-gap: 24px;
-          }
+      .list-item:hover > * {
+        filter: sepia(100%) brightness(200%);
+      }
+    }
+  }
 
-          .link {
-            display: flex;
-            align-items: center;
+  .nav-alt {
+    display: flex;
+    gap: 16px;
 
-            width: fit-content;
-          }
+    &::before {
+      position: absolute;
+      content: "";
 
-          .list-item:hover > * {
-            filter: sepia(100%) brightness(200%);
-          }
+      left: 0;
+
+      height: 2px;
+      width: 100%;
+
+      background-color: $d-gray;
+
+      margin-top: -2.75em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    .footer-top {
+      gap: 30px;
+
+      .list {
+        max-width: 100%;
+        width: 100%;
+        &-title {
+          line-height: 27px;
+        }
       }
     }
 
     .nav-alt {
-        display: flex;
-        gap: 16px;
+      flex-direction: column;
 
-        &::before {
-            position: absolute;
-            content: '';
+      max-width: 100%;
 
-            left: 0;
-
-            height: 2px;
-            width: 100%;
-
-            background-color: $d-gray;
-
-            margin-top: -2.75em;
-        }
+      width: 100%;
     }
+  }
 }
 
-
-
-
-@media screen and (max-width:768px) {
-    .footer {
-        .footer-top {
-            gap: 30px;
-
-            .list {
-                max-width: 100%;
-                width: 100%;
-                &-title {
-                    line-height: 27px;
-                }
-            }
-        }
-
-            .nav-alt {
-                flex-direction: column;
-
-                max-width: 100%;
-
-                width: 100%;
-            }
-    }
-}
-
-
-@media screen and (max-width:400px) {
-    .footer {
-        padding-inline: 10px;
-    }
+@media screen and (max-width: 400px) {
+  .footer {
+    padding-inline: 10px;
+  }
 }
