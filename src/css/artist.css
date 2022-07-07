@@ -439,13 +439,10 @@
   column-gap: 50px;
   row-gap: 25px;
 }
-.discography .section__body .album {
-  display: grid;
-}
 .discography .section__body .album-img {
   width: 250px;
   height: 250px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 .discography .section__body .album-info .title,
 .discography .section__body .album-info .year {
@@ -476,14 +473,13 @@
   row-gap: 23px;
 }
 .similar .section__body .artist {
-  display: grid;
   max-width: 250px;
 }
 .similar .section__body .artist-img {
   justify-self: center;
   width: 250px;
   height: 250px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 .similar .section__body .artist-info .name,
 .similar .section__body .artist-info .subscribers {
