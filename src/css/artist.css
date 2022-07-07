@@ -439,6 +439,10 @@
   column-gap: 50px;
   row-gap: 25px;
 }
+.discography .section__body .album {
+  display: flex;
+  flex-direction: column;
+}
 .discography .section__body .album-img {
   width: 250px;
   height: 250px;
@@ -473,6 +477,8 @@
   row-gap: 23px;
 }
 .similar .section__body .artist {
+  display: flex;
+  flex-direction: column;
   max-width: 250px;
 }
 .similar .section__body .artist-img {
