@@ -28,11 +28,11 @@
 
       text-align: center;
 
-      border-radius: 1em;
-
       margin-bottom: 25px;
       padding: 1.5em;
       padding-bottom: 2.5em;
+
+      border-radius: 1em;
 
       background-repeat: no-repeat;
       background-size: cover;
@@ -50,9 +50,9 @@
 
         grid-template-columns: min-content min-content;
 
-        justify-content: center;
-
         gap: 1rem;
+
+        justify-content: center;
 
         @include text(4em, 1em, 400);
         @include up-case;

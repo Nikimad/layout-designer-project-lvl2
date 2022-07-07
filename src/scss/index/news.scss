@@ -18,13 +18,13 @@
       &__body {
         display: flex;
 
-        grid-column: 2 / span 1;
-
         flex-direction: column;
 
-        max-width: 575px;
+        grid-column: 2 / span 1;
 
         gap: 30px;
+
+        max-width: 575px;
 
         margin-bottom: 24px;
 

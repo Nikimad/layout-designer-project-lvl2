@@ -11,8 +11,8 @@
 }
 
 @mixin text($size, $lh, $fw) {
-  font-size: $size;
   font-weight: $fw;
+  font-size: $size;
   line-height: $lh;
 }
 
