@@ -443,6 +443,10 @@
 .discography .section__body .album-info .year {
   margin: 0;
 }
+.discography .section__body .album-info .year {
+  font-size: 18px;
+  line-height: 1.5;
+}
 .discography .section__body .album-info .title {
   text-align: left;
   text-transform: none;
