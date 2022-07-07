@@ -20,9 +20,10 @@
 
         grid-column: 2 / span 1;
 
+        flex-direction: column;
+
         max-width: 575px;
 
-        flex-direction: column;
         gap: 30px;
 
         margin-bottom: 24px;
@@ -40,10 +41,11 @@
 
       &__footer {
         display: flex;
-        
-        grid-column: 2 / span 1;
 
         flex-direction: column;
+
+        grid-column: 2 / span 1;
+
         gap: 3em;
 
         .news-author {

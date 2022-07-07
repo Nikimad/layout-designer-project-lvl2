@@ -1,11 +1,11 @@
 @font-face {
-  font-family: Roboto;
   font-weight: 400;
+  font-family: Roboto;
   src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
-  font-family: Roboto;
   font-weight: 700;
+  font-family: Roboto;
   src: url("../fonts/Roboto/Roboto-Bold.ttf");
 }
 .head {
@@ -29,54 +29,54 @@
 
 .h1 {
   font-size: 60px;
-  line-height: 90px;
   font-weight: 700;
+  line-height: 90px;
 }
 
 .h2 {
   font-size: 38px;
-  line-height: 57px;
   font-weight: 700;
+  line-height: 57px;
 }
 
 .h3 {
   font-size: 24px;
-  line-height: 45px;
   font-weight: 400;
+  line-height: 45px;
 }
 
 .h4 {
   font-size: 18px;
-  line-height: 27px;
   font-weight: 700;
+  line-height: 27px;
 }
 
 @media screen and (max-width: 571px) {
   .h1 {
     font-size: 30px;
-    line-height: 45px;
     font-weight: 700;
+    line-height: 45px;
   }
   .h2 {
     font-size: 18px;
-    line-height: 27px;
     font-weight: 700;
+    line-height: 27px;
   }
   .h3 {
     font-size: 16px;
-    line-height: 24px;
     font-weight: 400;
+    line-height: 24px;
   }
   .h4 {
     font-size: 18px;
-    line-height: 27px;
     font-weight: 700;
+    line-height: 27px;
   }
 }
 .app-section .section__body .content .btn, .pricing-section .section__body .pricing-item__description {
   font-size: 12.8px;
-  line-height: 19.2px;
   font-weight: 400;
+  line-height: 19.2px;
 }
 
 .btn {
@@ -135,8 +135,8 @@
   grid-auto-flow: row;
   gap: 3em;
   max-width: 1240px;
-  padding: 100px 20px 0;
   margin: 0 auto;
+  padding: 100px 20px 0;
 }
 
 @media screen and (max-width: 400px) {
@@ -152,8 +152,8 @@
   align-items: center;
   column-gap: 90px;
   font-size: 11px;
-  line-height: 16.5px;
   font-weight: 400;
+  line-height: 16.5px;
   text-transform: uppercase;
   transform: translateX(-50%);
   max-width: 1200px;
@@ -186,8 +186,8 @@
 }
 .header .search .input {
   font-size: 13.5px;
-  line-height: 15.5px;
   font-weight: 400;
+  line-height: 15.5px;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   color: #757575;
@@ -308,10 +308,10 @@
 }
 
 .body {
-  font: 16px/1.5 Roboto, sans-serif;
   color: #cacaca;
-  background-color: #08020d;
+  font: 16px/1.5 Roboto, sans-serif;
   margin: 0;
+  background-color: #08020d;
 }
 
 .link {
@@ -320,14 +320,14 @@
 }
 
 .list {
-  list-style: none;
   width: fit-content;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 .list-title {
-  text-align: left;
   margin-bottom: 15px;
+  text-align: left;
 }
 .list-item > * {
   transition: 0.3s;
@@ -371,8 +371,8 @@
 }
 .page-description .subscribe-form .input {
   font-size: 14px;
-  line-height: 16.5px;
   font-weight: 700;
+  line-height: 16.5px;
   color: #fff;
   border: 2px solid #cacaca;
   border-radius: 3px;
@@ -384,16 +384,16 @@
 }
 .page-description .subscribe-form .input::placeholder {
   font-size: 14px;
-  line-height: 16px;
   font-weight: 700;
+  line-height: 16px;
   color: #fff;
 }
 .page-description .subscribe-form .btn {
   grid-row-start: 2;
   grid-column: 1/span 2;
   font-size: 13.5px;
-  line-height: 15px;
   font-weight: 400;
+  line-height: 15px;
 }
 
 @media screen and (max-width: 1240px) {
@@ -442,13 +442,13 @@
   grid-template-rows: min-content 12.5em min-content 2.5em min-content 4em;
   grid-template-columns: minmax(auto, 320px);
   color: #fff;
-  border-radius: 1em;
   text-align: center;
+  border-radius: 1em;
+  margin-bottom: 25px;
+  padding: 1.5em;
+  padding-bottom: 2.5em;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 1.5em;
-  margin-bottom: 25px;
-  padding-bottom: 2.5em;
   transition: 0.3s;
 }
 .pricing-section .section__body .pricing-item__title {
@@ -457,12 +457,12 @@
 .pricing-section .section__body .pricing-item__value {
   display: grid;
   grid-row: 3/span 1;
-  justify-content: center;
   grid-template-columns: min-content min-content;
+  justify-content: center;
   gap: 1rem;
   font-size: 4em;
-  line-height: 1em;
   font-weight: 400;
+  line-height: 1em;
   text-transform: uppercase;
   width: 100%;
   margin: 0;
@@ -470,8 +470,8 @@
 .pricing-section .section__body .pricing-item__value .currency {
   grid-column: 2/span 1;
   font-size: 32px;
-  line-height: 48px;
   font-weight: 400;
+  line-height: 48px;
 }
 .pricing-section .section__body .pricing-item .btn {
   grid-row: 5/span 1;
@@ -519,8 +519,8 @@
 .news-section .section__body .news-item__body {
   display: flex;
   grid-column: 2/span 1;
-  max-width: 575px;
   flex-direction: column;
+  max-width: 575px;
   gap: 30px;
   margin-bottom: 24px;
 }
@@ -534,16 +534,16 @@
 }
 .news-section .section__body .news-item__footer {
   display: flex;
-  grid-column: 2/span 1;
   flex-direction: column;
+  grid-column: 2/span 1;
   gap: 3em;
 }
 .news-section .section__body .news-item__footer .news-author {
   display: flex;
   gap: 16px;
   font-size: 12px;
-  line-height: 19px;
   font-weight: 400;
+  line-height: 19px;
   text-transform: uppercase;
 }
 .news-section .section__body .news-item__footer .news-author__avatar {
@@ -587,8 +587,8 @@
   }
   .news-section .section__body .news-item__body .news-title {
     font-size: 16px;
-    line-height: 24px;
     font-weight: 400;
+    line-height: 24px;
   }
 }
 @media screen and (max-width: 400px) {

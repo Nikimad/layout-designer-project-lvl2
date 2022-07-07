@@ -1,19 +1,19 @@
 @font-face {
-  font-family: Roboto;
   font-weight: 400;
+  font-family: Roboto;
   src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
-  font-family: Roboto;
   font-weight: 700;
+  font-family: Roboto;
   src: url("../fonts/Roboto/Roboto-Bold.ttf");
 }
 
 @mixin text($size, $lh, $fw) {
   font-size: $size;
-  line-height: $lh;
   font-weight: $fw;
+  line-height: $lh;
 }
 
 @mixin up-case {
@@ -30,7 +30,7 @@
 
 .head {
   color: $white;
-  
+
   @include t-alg-centr;
   @include up-case;
   @include marg-0;

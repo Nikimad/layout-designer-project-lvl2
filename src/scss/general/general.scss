@@ -10,12 +10,12 @@
 }
 
 .body {
+    color: $d-gray;
   font: 16px/1.5 Roboto, sans-serif;
-  color: $d-gray;
-
-  background-color: #08020d;
 
   margin: 0;
+
+  background-color: #08020d;
 }
 
 .link {
@@ -25,17 +25,17 @@
 }
 
 .list {
-  list-style: none;
-
   width: fit-content;
+
+  list-style: none;
 
   margin: 0;
   padding: 0;
 
   &-title {
-    text-align: left;
-
     margin-bottom: 15px;
+    
+    text-align: left;
   }
 
   &-item > * {
