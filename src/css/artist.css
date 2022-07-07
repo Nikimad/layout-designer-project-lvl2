@@ -413,7 +413,7 @@
   width: 100%;
 }
 .popular .section__body .track-info .description {
-  align-self: center;
+  display: grid;
 }
 .popular .section__body .track-info .description .title {
   color: #fff;

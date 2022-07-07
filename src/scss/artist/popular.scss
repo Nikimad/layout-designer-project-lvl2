@@ -24,7 +24,7 @@
 
                 width: 100%;
                 .description {
-                    align-self: center;
+                    display: grid;
                     .title {
                         @extend %fsmall-bold;
                         color: $white;
