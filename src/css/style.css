@@ -27,7 +27,6 @@
   color: #f89202;
 }
 
-/* Desktop typography */
 .h1 {
   font-size: 60px;
   line-height: 90px;
@@ -52,7 +51,6 @@
   font-weight: 700;
 }
 
-/* Mobile typography */
 @media screen and (max-width: 571px) {
   .h1 {
     font-size: 30px;

@@ -39,14 +39,16 @@
 .f-white {
   color: $white;
 }
+
 .f-dark-gray {
   color: $d-gray;
 }
+
 .f-orange {
   color: $orange;
 }
 
-/* Desktop typography */
+
 .h1 {
   @include text(60px, 90px, 700);
 }
@@ -62,7 +64,7 @@
 .h4 {
   @include text(18px, 27px, 700);
 }
-/* Mobile typography */
+
 @media screen and (max-width: 571px) {
   .h1 {
     @include text(30px, 45px, 700);
