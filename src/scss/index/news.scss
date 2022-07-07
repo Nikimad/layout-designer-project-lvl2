@@ -48,7 +48,7 @@
           gap: 16px;
 
           @include text(12px, 19px, 400);
-          @include upCase;
+          @include up-case;
 
           &__avatar {
             width: 19px;

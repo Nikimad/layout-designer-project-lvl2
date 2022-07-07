@@ -16,24 +16,24 @@
   font-weight: $fw;
 }
 
-@mixin upCase {
+@mixin up-case {
   text-transform: uppercase;
 }
 
-@mixin marg0 {
+@mixin marg-0 {
   margin: 0;
 }
 
-@mixin tAlgCentr {
+@mixin t-alg-centr {
   text-align: center;
 }
 
 .head {
   color: $white;
-  @include tAlgCentr;
-  @include upCase;
+  @include t-alg-centr;
+  @include up-case;
 
-  @include marg0;
+  @include marg-0;
 }
 
 .f-white {
@@ -87,5 +87,5 @@
 
 %fsmall-bold {
   @include text(12.8px, 19.2px, 700);
-  @include upCase;
+  @include up-case;
 }

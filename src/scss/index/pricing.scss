@@ -51,7 +51,7 @@
         gap: 1rem;
 
         @include text(4em, 1em, 400);
-        @include upCase;
+        @include up-case;
 
         width: 100%;
 

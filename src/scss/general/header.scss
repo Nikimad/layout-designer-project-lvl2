@@ -8,7 +8,7 @@
   column-gap: 90px;
 
   @include text(11px, 16.5px, 400);
-  @include upCase;
+  @include up-case;
 
   transform: translateX(-50%);
 
@@ -50,7 +50,7 @@
 
     .input {
       @include text(13.5px, 15.5px, 400);
-      @include upCase;
+      @include up-case;
       font-family: Arial, Helvetica, sans-serif;
       color: #757575;
 
