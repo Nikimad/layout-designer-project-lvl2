@@ -355,14 +355,14 @@
 }
 
 .page-description {
-  color: #fff;
   padding: 200px 0;
+  color: #fff;
 }
 .page-description .section__body {
-  max-width: 1240px;
   width: 100%;
-  padding: 0 20px;
+  max-width: 1240px;
   margin: 50px auto 0;
+  padding: 0 20px;
 }
 .page-description .section__body .head {
   text-align: left;
@@ -371,16 +371,16 @@
   margin-bottom: 3em;
 }
 .page-description .section__body .btns-container {
-  grid-row: 4/span 1;
   display: flex;
+  grid-row: 4/span 1;
   gap: 24px;
   margin-bottom: 24px;
 }
 .page-description .section__body .btns-container .btn {
   display: flex;
   gap: 16px;
-  color: #fff;
   width: 200px;
+  color: #fff;
 }
 .page-description .section__body .btns-container .btn .icon {
   width: 20px;

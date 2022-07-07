@@ -30,9 +30,9 @@
 
 .head {
   color: $white;
+  
   @include t-alg-centr;
   @include up-case;
-
   @include marg-0;
 }
 
@@ -47,7 +47,6 @@
 .f-orange {
   color: $orange;
 }
-
 
 .h1 {
   @include text(60px, 90px, 700);

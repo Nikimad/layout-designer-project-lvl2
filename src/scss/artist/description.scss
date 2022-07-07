@@ -1,15 +1,14 @@
 .page-description {
+  padding: 200px 0;
+  
   color: $white;
 
-  padding: 200px 0;
-
   .section__body {
-    max-width: 1240px;
     width: 100%;
-
-    padding: 0 20px;
+    max-width: 1240px;
 
     margin: 50px auto 0;
+    padding: 0 20px;
 
     .head {
       text-align: left;
@@ -20,9 +19,10 @@
     }
 
     .btns-container {
+      display: flex;
+
       grid-row: 4 / span 1;
 
-      display: flex;
       gap: 24px;
 
       margin-bottom: 24px;
@@ -31,10 +31,10 @@
         display: flex;
         gap: 16px;
 
+        width: 200px;
+
         @extend %fsmall;
         color: $white;
-
-        width: 200px;
 
         & .icon {
           width: 20px;
