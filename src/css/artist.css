@@ -393,14 +393,13 @@
 .popular .section__body {
   display: flex;
   flex-direction: column;
-  row-gap: 23px;
+  row-gap: 25px;
   column-gap: 50px;
   flex-wrap: wrap;
   max-height: 250px;
 }
 .popular .section__body .track {
   display: flex;
-  align-items: center;
   gap: 15px;
 }
 .popular .section__body .track-img {
@@ -410,6 +409,7 @@
 .popular .section__body .track-info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 .popular .section__body .track-info .description {
