@@ -5,11 +5,13 @@
         column-gap: 50px;
         row-gap: 25px;
         .album {
+            display: grid;
+            
             &-img {
                 width: 250px;
                 height: 250px;
 
-                margin-bottom: 17px;
+                margin-bottom: 18px;
             }
             &-info {
                 .title,

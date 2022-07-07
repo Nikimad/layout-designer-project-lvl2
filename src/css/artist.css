@@ -434,10 +434,13 @@
   column-gap: 50px;
   row-gap: 25px;
 }
+.discography .section__body .album {
+  display: grid;
+}
 .discography .section__body .album-img {
   width: 250px;
   height: 250px;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 .discography .section__body .album-info .title,
 .discography .section__body .album-info .year {
