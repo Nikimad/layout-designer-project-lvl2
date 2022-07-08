@@ -37,7 +37,8 @@ a {
     text-align: left;
   }
 
-  & > * {
+  & > *,
+  &-item {
     transition: 0.3s;
   }
 

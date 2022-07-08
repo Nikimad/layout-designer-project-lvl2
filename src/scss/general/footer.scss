@@ -33,6 +33,10 @@
         width: fit-content;
       }
 
+      .list-item > * {
+        transition: 0.3s;
+      }
+
       .list-item:hover > * {
         filter: sepia(100%) brightness(200%);
       }
