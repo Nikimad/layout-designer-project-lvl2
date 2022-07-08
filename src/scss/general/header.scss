@@ -6,9 +6,6 @@
   display: flex;
   align-items: center;
 
-  width: 100%;
-  max-width: 1200px;
-
   column-gap: 90px;
 
   @include text(11px, 16.5px, 400);
@@ -29,21 +26,7 @@
 
   .nav {
     display: flex;
-    gap: 24px;
-
-    .nav-item > * {
-      width: fit-content;
-
-      color: $d-gray;
-
-      text-decoration: none;
-
-      transition: 0.3s;
-
-      &:hover {
-        color: $white;
-      }
-    }
+    column-gap: 24px;
   }
 
   .search {
@@ -73,16 +56,10 @@
   }
 }
 
-@media screen and (max-width: 1240px) {
-  .header {
-    padding: 0 20px;
-  }
-}
-
 @media screen and (max-width: 900px) {
   .header {
     display: grid;
-    gap: 17px;
+    gap: 1em;
 
     .identic {
       grid-row: 1 / span 1;
@@ -115,8 +92,7 @@
     }
 
     .nav {
-      display: block;
-
+      flex-direction: column;
       grid-row: 2 / span 1;
 
       margin-left: 0;

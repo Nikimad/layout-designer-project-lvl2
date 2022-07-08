@@ -3,14 +3,5 @@
   grid-auto-flow: row;
   gap: 3em;
 
-  max-width: 1240px;
-
-  margin: 0 auto;
-  padding: 100px 20px 0;
-}
-
-@media screen and (max-width: 400px) {
-  .section {
-    padding-inline: 10px;
-  }
+  padding-top: 100px;
 }

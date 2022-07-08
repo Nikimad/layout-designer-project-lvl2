@@ -1,3 +1,5 @@
+@import "./banner";
+
 .page-description {
   display: grid;
   grid-template-rows: min-content min-content 2em min-content 1em min-content;
@@ -35,7 +37,7 @@
       min-width: 270px;
       max-height: 50px;
 
-      padding: 16px 22.25px 18px;
+      padding: 18px 20px;
 
       color: $white;
 

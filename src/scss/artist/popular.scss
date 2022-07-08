@@ -1,12 +1,8 @@
 .popular {
   .section__body {
-    display: flex;
-    flex-flow: column wrap;
-    row-gap: 25px;
+    flex-direction: column;
 
     max-height: 250px;
-
-    column-gap: 50px;
 
     .track {
       display: flex;

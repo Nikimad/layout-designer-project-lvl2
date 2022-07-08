@@ -1,14 +1,12 @@
+@import "./banner";
+
 .page-description {
-  padding: 200px 0;
+  padding: 200px 20px;
 
   color: $white;
 
   .section__body {
-    width: 100%;
-    max-width: 1240px;
-
     margin: 50px auto 0;
-    padding: 0 20px;
 
     .head {
       text-align: left;
@@ -58,3 +56,10 @@
     }
   }
 }
+
+@media screen and (max-width: 400px) {
+  .page-description {
+    padding-inline: 10px;
+  }
+}
+
