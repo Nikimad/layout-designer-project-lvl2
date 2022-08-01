@@ -1,0 +1,47 @@
+.discography {
+  .section__body {
+    .album {
+      display: flex;
+      flex-direction: column;
+
+      &-img {
+        width: 250px;
+        height: 250px;
+
+        margin-bottom: 18px;
+      }
+
+      &-info {
+        .title,
+        .year {
+          margin: 0;
+        }
+
+        .year {
+          font-size: 18px;
+          line-height: 1.5;
+        }
+
+        .title {
+          text-align: left;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .discography {
+    .section__body {
+      .album {
+        max-width: 137px;
+
+        &-img {
+          width: 137px;
+          height: 137px;
+        }
+      }
+    }
+  }
+}

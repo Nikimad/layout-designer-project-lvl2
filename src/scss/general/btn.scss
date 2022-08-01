@@ -1,0 +1,63 @@
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: none;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &_b-r5 {
+    border-radius: 5px;
+  }
+
+  &_b-r32 {
+    border-radius: 32px;
+  }
+
+  &_green {
+    background-color: $green;
+  }
+
+  &_red {
+    background-color: $red;
+  }
+
+  &_purple {
+    background-color: $purple;
+  }
+
+  &_tp {
+    background-color: transparent;
+  }
+
+  &_b-white {
+    border: 1px solid $white;
+  }
+
+  &_b-dark-gray {
+    border: 1px solid $d-gray;
+  }
+
+  &_fit {
+    width: fit-content;
+  }
+
+  &_pad16-30 {
+    padding: 16px 30px;
+  }
+
+  &_pad16-40 {
+    padding: 16px 40px;
+  }
+
+  &_pad20-30 {
+    padding: 20px 30px;
+  }
+}

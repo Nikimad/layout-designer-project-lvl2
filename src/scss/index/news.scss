@@ -1,0 +1,133 @@
+.news-section {
+  .section__body {
+    display: grid;
+    gap: 65px;
+
+    .news-item {
+      display: grid;
+
+      column-gap: 50px;
+
+      &__img {
+        grid-row: 1 / span 2;
+
+        max-width: 575px;
+        height: 100%;
+      }
+
+      &__body {
+        display: flex;
+
+        flex-direction: column;
+
+        grid-column: 2 / span 1;
+
+        gap: 30px;
+
+        max-width: 575px;
+
+        margin-bottom: 24px;
+
+        .news-title {
+          font-size: 30px;
+          text-align: left;
+          text-transform: capitalize;
+        }
+
+        .news-text {
+          margin: 0;
+        }
+      }
+
+      &__footer {
+        display: flex;
+
+        flex-direction: column;
+
+        grid-column: 2 / span 1;
+
+        gap: 3em;
+
+        .news-author {
+          display: flex;
+          gap: 16px;
+
+          @include text(12px, 19px, 400);
+          @include up-case;
+
+          &__avatar {
+            width: 19px;
+            height: 19px;
+          }
+
+          &__name {
+            margin: 0;
+          }
+
+          &__date {
+            margin: 0;
+          }
+        }
+
+        .btn {
+          margin-bottom: 1em;
+        }
+      }
+    }
+
+    & :nth-child(2n) .news-item {
+      &__img {
+        grid-column: 2 / span 1;
+      }
+
+      &__body {
+        grid-column: 1 / span 1;
+      }
+
+      &__footer {
+        grid-column: 1 / span 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .news-section {
+    .section__body {
+      gap: 45px;
+
+      .news-item {
+        display: flex;
+        flex-direction: column;
+
+        &__img {
+          align-self: center;
+          width: 374px;
+
+          margin-bottom: 50px;
+        }
+
+        &__body {
+          gap: 16px;
+
+          .news-title {
+            @include text(16px, 24px, 400);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .news-section {
+    .section__body {
+      .news-item {
+        &__img {
+          width: 300px;
+          height: auto;
+        }
+      }
+    }
+  }
+}

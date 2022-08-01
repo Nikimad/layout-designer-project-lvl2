@@ -1,0 +1,65 @@
+@import "./banner";
+
+.page-description {
+  padding: 200px 20px;
+
+  color: $white;
+
+  .container {
+    margin: 50px auto 0;
+
+    .head {
+      text-align: left;
+    }
+
+    .counter {
+      margin-bottom: 3em;
+    }
+
+    .btns-container {
+      display: flex;
+
+      grid-row: 4 / span 1;
+
+      gap: 24px;
+
+      margin-bottom: 24px;
+
+      .btn {
+        display: flex;
+        gap: 16px;
+
+        width: 200px;
+
+        @extend %fsmall;
+        color: $white;
+
+        & .icon {
+          width: 20px;
+          height: 20px;
+
+          filter: invert(100%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 571px) {
+  .page-description {
+    .container {
+      margin-top: 25px;
+
+      .btns-container {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .page-description {
+    padding-inline: 10px;
+  }
+}
+
